@@ -35,7 +35,9 @@ header{
 }
 
 nav{
-    height: 225px;
+    height: 95px;
+    padding-top: 8em;
+    padding-bottom: 0;
 }
 
 nav a{
@@ -48,13 +50,32 @@ nav a{
     font-weight: bold;
 }
 
-figure{
+#fix:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+#content{
     background-color: darkgreen;
     width: auto;
-    margin-left: 0;
+    height: 22em;
 }
 
-img{
+
+#content figure{
+    width: 30%;
+    float: left;
+}
+
+h2, h4{
+    background-color: darkred;
+    width: 70%;
+    margin-right: 0;
+}
+
+#content figure img{
     border-radius: 50%;
 }
+
+
 
