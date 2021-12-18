@@ -1,3 +1,3 @@
-# practicewebsite
+# freelancewebsite
 
-i'm building a practise website to learn html and css better
+i'm building a freelance website to learn html and css better

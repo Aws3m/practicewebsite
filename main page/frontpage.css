@@ -1,0 +1,35 @@
+*{
+    margin:0;
+}
+
+header{
+    width: 100%;
+}
+#banner{
+    width: 100%;
+    margin: auto;
+    height: 100px;
+}
+
+#headtext{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color:lightsteelblue;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightsteelblue;
+}
+
+.nav{
+    list-style: none;
+    text-decoration: none;
+
+}
