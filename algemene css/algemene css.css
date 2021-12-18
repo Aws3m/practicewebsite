@@ -21,11 +21,11 @@ header{
 
 h3{
     margin-top: 10px;
+    font-size: large;
 }
 
 h1, h3{
     font-family: fantasy;
-    font-size: xx-large;
     font-weight: 200;
 }
 
