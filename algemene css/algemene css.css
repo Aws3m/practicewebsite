@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #6CA6C1;
+    background-color: #345830;
 }
 header{
     width: 100%;
@@ -19,7 +19,7 @@ header{
     position: absolute;
     top: 10px;
     left: 5px;
-    color:lightsteelblue;
+    color:#94ECBE;
 }
 
 h3{
@@ -35,7 +35,7 @@ h1, h3{
 nav{
     display: flex;
     justify-content: space-evenly;
-    background-color: #2F3061;
+    background-color: #1A1F16;
 }
 
 .nav{
@@ -44,11 +44,23 @@ nav{
     height: 30px;
     padding-top: 10px;
     display: inline-block;
+    position:relative;
     width: 10%;
     text-align: center;
-    color:mintcream;
+    color:#94ECBE;
     font-family: fantasy;
     font-weight: 200;
+}
+
+.nav::after{
+    content: "";
+    position: absolute;
+    letter-spacing: 0.5px;
+    width: 0;
+    bottom: -1px;
+    left: 30%;
+    background-color: #94ECBE;
+    height: 3px;
 }
 
 .nav:hover{
@@ -56,10 +68,15 @@ nav{
     font-family: fantasy;
 }
 
-/* lightblue: #6CA6C1
-    yellow: #FFE66D
-    dark blue: #2F3061
-    grey: #343434
-    mint cream: #F7FFF7
+.nav:hover::after{
+    width: 40%;
+    transition: 0.3s;
+}
+
+/* dark jungle: #1A1F16
+    forest green trad: #1E3F20
+    hunter green: #345830
+    amazon: #4A7856
+    magic mint: #94ECBE
 */
     
