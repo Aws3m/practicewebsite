@@ -8,6 +8,7 @@ html{ scroll-behavior: smooth;}
 :root {
     --lightBlue: #48cab9;
     --darkBlue: #41B3A3;
+    --glassy: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     --greenTint: #006400;
   }
 
@@ -16,7 +17,7 @@ body{
 }
 
 #banner{
-    background-image: radial-gradient(circle, #48cab9 0%, rgba(251,251,251,0.5) 100%); ;
+    background: linear-gradient(to right top, var(--darkBlue), var(--lightBlue)) ;
     width: 100%;
     height: 300px;
     display: flex;
@@ -28,15 +29,16 @@ body{
     top: 10px;
     left: 5px;
     width: 50%;
-    height: 50%;
+    height: 12%;
     padding-left: 20px;
-    padding-top: 100px;
-    padding-right: 20px;;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     box-sizing: content-box;
     border-radius: 20px;
     display: flex;
-    background: linear-gradient(to right bottom rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-    color:grey;
+    background: white;
+    background: var(--glassy);
     box-shadow: 1px 1px 10px;
 }
 
@@ -53,32 +55,32 @@ span{
     display: block;
     height: 100%;
     padding-left: 10px;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 600;
     color: var(--greenTint);
     animation: spin_words 6s infinite;
 }
 
 @keyframes spin_words{
-    35%{
-        transform: translateY(-112%);
+    25%{
+        transform: translateY(0%);
     }
     50%{
-        transform: translateY(-100%);
+        transform: translateY(-105%);
     }
     75%{
-        transform: translateY(112%);
+        transform: translateY(-105%);
     }
     100%{
-        transform: translateY(-100%);
+        transform: translateY(0%);
     }
 }
 
 nav{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(255,255,255,0.7);
-    opacity: 0.4;
+    background: white;
+    background: var(--glassy);
 }
 
 .nav{
@@ -92,6 +94,7 @@ nav{
     width: 10%;
     text-align: center;
     color:grey;
+    font-weight: bolder;
     font-weight: 200;
 }
 
@@ -101,7 +104,7 @@ nav{
     bottom: 0;
     width: 100%;
     left: 0;
-    background-color: black;
+    background-color: var(--greenTint);
     height: 3px;
     transform: scaleX(0);
     transform-origin: right;
@@ -111,16 +114,6 @@ nav{
 .nav:hover::after{
     transform: scaleX(1);
     transform-origin: left;
-}
-
-.nav:active{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    background-color: black;
-    height: 3px;
 }
  
 #gotop{
@@ -163,5 +156,5 @@ footer{
 
 .socials{
     height: 70px;
-    width: 50px;
+    width: 100px;
 }
