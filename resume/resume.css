@@ -1,25 +1,31 @@
 :root {
-    --darkJungle: #1A1F16;
-    --forestGreenTrad: #1E3F20;
-    --hunterGreen: #345830;
-    --amazon: #4A7856;
-    --magicMint: #94ECBE;
-  }
+  --lightBlue: #48cab9;
+  --darkBlue: #41B3A3;
+  --glassy: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  --greenTint: #006400;
+}
 
-#h2{
-    margin: 0 auto;
-    font-size: 2em;
-    font-weight: lighter;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #94ECBE;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;;
-    text-align: center;
-    width: 70%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: black 1px solid;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    box-shadow: 0px 10px 5px #343434;
-    background-color: #345830;
-}  
+.glassy{
+  margin-left: 30px;
+  width: 50%;
+  height: auto;
+  background: var(--glassy);
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px;
+  margin-bottom: 10px;
+}
+
+.hoofd-glassy{
+  color: var(--greenTint);
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.text-glassy{
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 20px;
+}
