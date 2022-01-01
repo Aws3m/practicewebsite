@@ -1,31 +1,40 @@
 :root {
-  --lightBlue: #48cab9;
-  --darkBlue: #41B3A3;
-  --glassy: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-  --greenTint: #006400;
+	--lightBlue: #48cab9;
+	--darkBlue: #41b3a3;
+	--glassy: rgba(255, 255, 255, 0.5);
+	--greenTint: #006400;
 }
 
-.glassy{
-  margin-left: 30px;
-  width: 50%;
-  height: auto;
-  background: var(--glassy);
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px;
-  margin-bottom: 10px;
+#mainContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	background-color: linear-gradient(to right bottom green, white)
 }
 
-.hoofd-glassy{
-  color: var(--greenTint);
-  font-size: 30px;
-  margin-left: 15px;
-  margin-top: 20px;
-  padding-top: 20px;
-  text-decoration: underline;
+.glassy {
+	background: rgba(255, 255, 255, 0.7);
+	margin-left: 30px;
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	box-shadow: 1px 1px 10px;
+	
 }
 
-.text-glassy{
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 20px;
+.hoofd-glassy {
+	margin-left: 20px;
+	margin-top: 10px;
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.text-glassy {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
