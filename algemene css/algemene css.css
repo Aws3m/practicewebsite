@@ -64,6 +64,32 @@ footer{
     padding-left: 10px;
 }
 
+.social-media{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	gap: 20%;
+}
+
+#mediabuttons{
+	display: flex;
+	gap: 10%;
+}
+.socials{
+	width: 30px;
+	height: 30px;
+	transition: 0.2s;
+}
+
+.socials:hover{
+	margin-bottom: 10px;
+}
+#copyright{
+	font-weight: 800;
+	
+}
 #gotop {
 	position: fixed;
 	bottom: 160px;

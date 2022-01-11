@@ -2,45 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <title>About</title>
     <link rel="stylesheet" type="text/css" href="../algemene css/algemene css.css">
     <link rel="stylesheet" type="text/css" href="./about.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <a id="gotop" href="#" >&#9650;</a>
+    
     <div id="container">
         <div id="mainContent">
             <div class="glassy">
-                <p class="hoofd-glassy">Who am i</p>
-                <p class="text-glassy">
-                    My name is Sem Radoes. In 2013 I befriended people who work in IT. 
-                    I was involved in their hobby projects and a wide world opened before my eyes.
-                    My education at that moment prevented me from studying ICT. 
-                    Throughout my career as pedagogue, i realised this is not a job that would make me happy.
-                    It wasn't inline with my interests. When the opportunity arose, I started a bachelors degree. 
-                    Soon i realised that an overall ICT degree wasn't what i was interested in.
-                    I wanted to be a developer for web apps and websites. I was interested the most in the front end. 
-                    So i enrolled in a front end developer course and now i am an enthousiastic front end developer who works for <mark>company name here</mark>
-                </p>
+                <div class="leftContent">
+                    <p class="hoofd-glassy">Who am i</p>
+                    <p class="text-glassy">
+                        My name is Sem Radoes. In 2013 I befriended people who work in IT. 
+                        I was involved in their hobby projects and a wide world opened before my eyes.
+                        My education at that moment prevented me from studying ICT. 
+                        Throughout my career as pedagogue, i realised this is not a job that would make me happy.
+                        It wasn't inline with my interests. When the opportunity arose, I started a bachelors degree. 
+                        Soon i realised that an overall ICT degree wasn't what i was interested in.
+                        I wanted to be a developer for web apps and websites. I was interested the most in the front end. 
+                        So i enrolled in a front end developer course and now i am an enthousiastic front end developer who works for <mark>company name here</mark>
+                    </p>
+                </div>
+                <figure>
+                    <img class="mainContentPictures" src="../pictures/pasfoto.PNG" alt="sem">
+                </figure>
             </div>
             <div class="glassy">
-                <p class="hoofd-glassy">What i do</p>
-                <p class="text-glassy">
-                    I am an enthousiastic front end developer that loves making amazing web applications. 
-                    I like to experiment and improve myself everyday
-                </p>
+                <figure>
+                    <img src="../pictures/front-end-tools.png" alt="front-end-tools" class="mainContentPictures">
+                </figure>
+                <div class="leftContent">
+                    <p class="hoofd-glassy">What i do</p>
+                    <p class="text-glassy">
+                        I am an enthousiastic front end developer that loves making amazing web applications. 
+                        I like to experiment and improve myself everyday
+                    </p>
+                </div>
             </div>
             <div class="glassy">
-                <p class="hoofd-glassy">The future...</p>
-                <p class="text-glassy">
-                    
-                </p>
+                <div class="leftContent">
+                    <p class="hoofd-glassy">The future...</p>
+                    <p class="text-glassy">
+                        In the future i would like to develop myself more and work more on my own.
+                    </p>
+                </div>
+                <figure>
+                    <img class="mainContentPictures" src="../pictures/future jump.jpg" alt="futurepicture">
+                </figure>
             </div>
         </div>
-        <figure>
-            <img id="pasfoto" src="../pictures/pasfoto.PNG" alt="sem">
-        </figure>
     </div>
     <footer>
         <div class="container">       
@@ -73,13 +85,16 @@
                 <a class="footerlinks" href="#">Lorem ipsum</a>
             </div>  
             <div class="social-media">
-                <Div id="copyright"></Div></Div>
-                <a class= "socials" href="https://www.facebook.com/sem.radoes"><img src="../pictures/f_logo_RGB-Blue_1024.png" alt="facebook" height="20" width="20"></a>
-                <a class= "socials" href="https://www.linkedin.com/in/sem-radoes-873435196/"><img src="../pictures/LI-In-Bug.png" alt="linkedIn" height="20" width="20"></a>
-                <a class= "socials" href="#"><img src="../pictures/2021 Twitter logo - blue.png" alt="twitter" height="20" width="20"></a>
+                <div id="mediabuttons">
+                    <a class= "socials" href="https://www.facebook.com/sem.radoes"><img src="../pictures/f_logo_RGB-Blue_1024.png" alt="facebook" height="20" width="20"></a>
+                    <a class= "socials" href="https://www.linkedin.com/in/sem-radoes-873435196/"><img src="../pictures/LI-In-Bug.png" alt="linkedIn" height="20" width="20"></a>
+                    <a class= "socials" href="#"><img src="../pictures/2021 Twitter logo - blue.png" alt="twitter" height="20" width="20"></a>
+                </div>
+                <Div id="copyright"></Div>
             </div>
         </div> 
     </footer>
-    <script src="../scripts/getCurrentYearForCopyright.ts"></script>
+    <a id="gotop" href="#" >&#9650;</a>
+    <script src="../scripts/getCurrentYearForCopyright.js"></script>
 </body>
 </html>     
