@@ -1,8 +1,39 @@
 
-
-#container{
+#projects{
 	display: flex;
-	flex-direction: row;
-	gap: 20%;
+	padding: 30px 30px 30px 30px;
+	flex-wrap: wrap;
+	gap: 2.2em;
+	background: rgb(43, 24, 24);
 }
 
+.projectContainer{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 300px;
+	transition: 0.5s;
+}
+
+.project{
+	width: 200px;
+	height: 150px;
+	background: chartreuse;
+	transform: translateY(75px);
+	
+}
+
+.project:hover{
+	transform:translateY(0);
+}
+
+.projectdescription{
+	width: 200px;
+	height: 150px;
+	background: rgb(24, 18, 117);
+	transform: translateY(-75px);
+}
+
+.projectdescription:hover{
+	transform:translateY(0);
+}

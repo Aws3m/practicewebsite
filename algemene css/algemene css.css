@@ -26,12 +26,13 @@ footer{
 	justify-content: center;
 	align-items: center;
 	height: 150px;
+	gap: 5%;
 }
 
-.footer-column{
+.footer-column, .social-media{
     display:flex;
     flex-direction: column;
-    width: 20%;
+    width: 15%;
 	gap: 2px;
 }
 
@@ -39,6 +40,7 @@ footer{
 	font-size: 15px;
 	position: relative;
 	margin-bottom: 10px;
+	color: rgb(0, 2, 71);
 }
 
 .footerhead::after{
@@ -68,27 +70,35 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	height: 150px;
 	gap: 20%;
 }
 
 #mediabuttons{
 	display: flex;
+	justify-content:start;
+	align-items: center;
 	gap: 10%;
+	height: 60px;
 }
 .socials{
 	width: 30px;
 	height: 30px;
 	transition: 0.2s;
+	text-align: center;
 }
 
 .socials:hover{
-	margin-bottom: 10px;
+	width: 35px;
+	height: 35px;
+}
+
+.socials2{
+	width: 30px;
 }
 #copyright{
 	font-weight: 800;
-	
+	color: white;
 }
 #gotop {
 	position: fixed;
