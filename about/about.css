@@ -4,7 +4,7 @@
 	flex-direction: row;
 	gap: 20%;
 	width: 100%;
-	background-image: linear-gradient(rgb(24, 159, 168),rgb(23, 8, 241));
+	background-image: linear-gradient(rgb(23, 8, 241),rgb(24, 159, 168));
 }
 
 #mainContent {
@@ -23,10 +23,11 @@
 
 .headertext{
 	position: absolute;
+	flex-direction: column;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 20%;
+	top: 18%;
 	left: 26%;
 	width: 50%;
 	height: 50%;
@@ -38,14 +39,23 @@
 	gap: 1vw;
 }
 
+.headerdivs{
+	display: flex;
+	gap: 1em;
+}
+
 .headertext .h1{
 	font-size: xx-large;
 	transition: 0.2s ;
+	background: rgb(2, 32, 95);
+	border-radius: 50%;
+	width: 40px;
+	box-shadow: 0 2px 2px 0;
+	color: blanchedalmond;
 }
 
 .headertext .h1:hover{
-	margin-bottom: 10px;
-	color: darkblue;
+	transform: scale(1.5);
 	cursor: default;
 }
 
@@ -53,15 +63,21 @@ figure{
 	width: 50%;
 	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+}
+
+.middlefigure{
+	display: flex;
+	justify-content: flex-start;
+
 }
 
 .mainContentPictures{
 	height: 100%;
 	width: 50%;
-	border-radius: 20px;
-	box-shadow: 0 10px 10px 0;
+	border-radius: 15px;
+	box-shadow: 0 10px 10px;
 }
 
 .glassy {
