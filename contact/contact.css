@@ -1,8 +1,15 @@
+.main{
+	background-image: linear-gradient(45deg, rgb(100, 92, 211),rgb(24, 159, 168));
+}
 .header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 200px;
+	height: 300px;
+	background-image: url(../pictures/SeekPng.com_contact-us-banner-png_4208919.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #headtext {
@@ -18,8 +25,7 @@
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
-	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 1px 1px 30px;
+	background-color: rgba(255, 255, 255, 0.35);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 }
@@ -59,9 +65,19 @@ span {
 	}
 }
 
-#container{
+.calltext{
 	display: flex;
-	flex-direction: row;
-	gap: 20%;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	gap: 5%;
 }
 
+.calltext .telefoon, .calltext .text{
+	font-size: 22px;
+}
+
+.calltext figure{
+	display: flex;
+	align-items: center;	
+}
