@@ -1,3 +1,63 @@
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+#headtext {
+	top: 10px;
+	left: 5px;
+	width: 50%;
+	height: 40px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	box-sizing: content-box;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 1px 1px 30px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+h1 {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+#rotatingWords {
+	overflow: hidden;
+}
+
+span {
+	display: block;
+	height: 100%;
+	padding-left: 10px;
+	font-size: 32px;
+	font-weight: 600;
+	color: rgb(0, 0, 0);
+	animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+	25% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(-105%);
+	}
+	75% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
 
 #container{
 	display: flex;
