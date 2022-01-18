@@ -98,7 +98,7 @@ figure{
 	gap: 2em;
 }
 
-p{
+.telefoon{
 	border-radius: 10px;
 	box-shadow: 0 1px 2px grey;
 	padding: 10px;
