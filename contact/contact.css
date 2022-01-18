@@ -110,7 +110,7 @@ figure{
 
 }
 
-p::before{
+.telefoon::before{
 	content: "";
 	position: absolute;
 	width: 15px;
