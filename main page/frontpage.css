@@ -27,6 +27,13 @@ body {
 	gap: 50px;
 }
 
+
+.clay-style{
+	border-radius: 10px;
+	box-shadow: 25px 25px 50px rgba(9, 148, 255, 0.25), -10px -10px 30px rgba(9, 148, 255, 0.1),
+	inset -5px -5px 15px rgba(9, 148, 255, 0.5);
+}
+
 #headtext {
 	top: 10px;
 	left: 5px;
@@ -37,17 +44,13 @@ body {
 	padding-right: 20px;
 	padding-bottom: 20px;
 	box-sizing: content-box;
-	border-radius: 20px;
 	display: flex;
 	justify-content: center;
-	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 1px 1px 30px;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 h1 {
-	color: rgba(255, 255, 255, 0.7);
+	color: grey;
 	font-size: 30px;
 	letter-spacing: 2px;
 }
@@ -82,45 +85,36 @@ span {
 }
 
 .navcard{
-	background:rgba(255, 255, 255, 0.15);
+	background:rgba(255, 255, 255, 0.9);
 	width: 52%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	backdrop-filter: blur(10px);
-	border-radius: 2%;
-	box-shadow: 0 10px 10px 0;
-}
-
-nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	gap: 5em;
 	height: 400px;
-	width: 800px;
 }
+ .navigation{
+	 width: 40%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 gap: 6em;
+ }
 
-.nav {
-	list-style: none;
+.nav {	
 	text-decoration: none;
 	letter-spacing: 5px;
-	height: 30px;
-	padding-top: 10px;
+	height: 20px;
+	padding: 10px;
 	display: block;
-	position: relative;
-	width: 40%;
-	border-radius: 20px;
+	width: 60%;
 	text-align: center;
 	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.9);
 	font-weight: 800;
-	background: rgba(255, 255, 255, 0.2);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
 	transition: 0.2s;
 }
 .nav:hover {
-	background: rgb(53, 46, 46);
-	color: white;
 	letter-spacing: 10px;
 }

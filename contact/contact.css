@@ -107,6 +107,6 @@ span {
 	box-shadow: 0 2px 2px rgb(27, 70, 27);
 	padding: 10px;
 	background: rgb(14, 94, 38);
-	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: 0.5s;
 	width: 90px;
 }
