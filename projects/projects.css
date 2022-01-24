@@ -84,9 +84,15 @@ h1{
 	inset -5px -5px 15px rgba(0, 0, 0, 0.5);
 	position: absolute; left: 47%; top: 90%;
 	border-radius: 10px;
-	font-size: 40px;
+	font-size: 20x;
 	text-align: center;
-	line-height: 50px;;
+	line-height: 50px;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.arrowDown:hover{
+	transform: scale(1.05);
 }
 
 #projects{

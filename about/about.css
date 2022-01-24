@@ -99,9 +99,15 @@ h1{
 	inset -5px -5px 15px rgba(0, 0, 0, 0.5);
 	position: absolute; left: 47%; top: 90%;
 	border-radius: 10px;
-	font-size: 40px;
+	font-size: 20px;
 	text-align: center;
-	line-height: 50px;;
+	line-height: 50px;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+.arrowDown:hover{
+	transform:scale(1.05);
 }
 
 .mainContentPictures{

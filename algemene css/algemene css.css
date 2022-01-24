@@ -106,13 +106,11 @@ body {
 	border-radius: 50%;
 	color: black;
 	background: white;
+	transition: 0.2s;
 }
 
 #gotop:hover {
-	transition: ease-in 0.2s;
-	color: white;
-	background: black;	
-	border: 1px solid white;
+	transform: scale(1.05);
 }
 
 .clay-style{
