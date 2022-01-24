@@ -1,5 +1,6 @@
-const telefoonel = document.createElement("p.telefoon");
-const telefoonnummer = telefoonel.textContent= "0000000000";
-const calltextDiv = document.getElementsByClassName("calltext");
-const icons = document.getElementsByClassName("icons");
-calltextDiv.insertBefore(telefoonnummer, icons);
+const telefoonel = document.createElement("p");
+telefoonel.classList.add("telefoon");
+telefoonel.classList.add("clay-style");
+telefoonel.innerText = "0000000000";
+const icons = document.querySelector(".icons");
+icons.parentNode.insertBefore(telefoonel, icons);

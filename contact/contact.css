@@ -18,6 +18,7 @@
 	background-size: cover;
 	background-position: right;
 	z-index: 1;
+	position: relative;
 }
 
 #headtext {
@@ -41,6 +42,7 @@ h1 {
 	color: rgba(0, 0, 0, 0.7);
 	font-size: 30px;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 #rotatingWords {
@@ -114,13 +116,12 @@ span {
 
 .icons:hover img{
 	transform: scale(1.05);
+	cursor: pointer;
 }
 
 .telefoon{
-	border-radius: 10px;
-	box-shadow: 0 2px 2px rgb(27, 70, 27);
 	padding: 10px;
-	background: rgb(14, 94, 38);
+	background: rgba(255, 255, 255, 0.9);
 	transition: 0.5s;
 	width: 90px;
 }

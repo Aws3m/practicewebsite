@@ -20,6 +20,7 @@
 	align-items: center;
 	background: linear-gradient(rgb(70, 84, 206),rgb(65, 50, 150));
 	z-index: 1;
+	position: relative;
 }
 
 .headertext{
@@ -36,6 +37,7 @@
 h1{
 	color: grey;
 	font-size: 50px;
+	text-align: center;
 }
 
 .bol1{
