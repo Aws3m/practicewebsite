@@ -20,27 +20,40 @@
     </div>
     <div id="main">
         <div class="calltext clay-style">
-            <h1 class="callMe">Call me/Text me</h1>
+            <h1>Call me/Text me</h1>
             <div class="icons clay-style">
                 <img class="icon" src="../pictures/telefoon icon.jpg" alt="telicon" width="50" height="50">
                 <img class="icon" src="../pictures/whatsapp icon.png" alt="whatssappicon" width="50" height="50">
             </div>
         </div>
-        <div class="formspace">
-            <form>
-                <label for="surname" id="firstName">name</label>
-                <input type="text" id="firstName" required>
-                <label for="lastname" id="lastName">last name</label>
-                <input type="text" id="firstName" required>
-                
-            </form>
-        </div>
+        <form class="clay-style">
+            <div class="formheader">
+                <h1>Send me an Email</h1>
+            </div>
+            <div class="inputfields">
+                <div class="leftform">
+                    <label for="firstname">first name</label>
+                    <input type="text" id="firstName" required>
+                    <label for="email">email</label>
+                    <input type="text" id="email" required>
+                    <label for="phone">phone</label>
+                    <input type="text" id="phone" required>
+                </div>
+                <div class="line"></div>
+                <div class="rightform">
+                    <label for="lastname">last name</label>
+                    <input type="text" id="lastname" required>
+                    <label for="question or quotation">ask me a</label>
+                    <textarea rows="10" name="qorq" placeholder="question or quotation" id="question or quotation" required></textarea>
+                </div>
+            </div>
+        </form>
     </div>
     <footer>
         <div class="container">       
             <div class="footer-column">
                 <h1 class="footerhead">navigation</h1>
-                <a class="footerlinks" href="../main page/frontpage.html">home</a>
+                <a class="footerlinks" href="../main page/index.html">home</a>
                 <a class="footerlinks" href="../about/about.html">about</a>
                 <a class="footerlinks" href="../projects/projects.html">projects</a>
                 <a class="footerlinks" href="../contact/contact.html">contact</a>
