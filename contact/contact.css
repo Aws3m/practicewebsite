@@ -49,7 +49,7 @@ h1 {
 	overflow: hidden;
 }
 
-span {
+.headerspan {
 	display: block;
 	height: 100%;
 	padding-left: 10px;
@@ -142,32 +142,45 @@ form{
 
 .inputfields{
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 }
 .leftform, .rightform{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	justify-content: start;
-	gap: 1rem;
+	gap: 2rem;
+}
+
+label{
+	position: relative;
 }
 
 input{
 	height: 30px;
+	border: none;
+	appearance: none;
 	border-radius: 10px;
+	outline: none;
+	background: linear-gradient(rgba(16, 70, 40, 0.2), rgba(46, 107, 74, 0.5));
+	padding: 5px;
 }
 input:focus{
 	background-color: beige;
 }
 textarea{
 	border-radius: 10px;
+	padding: 5px;
 }
 textarea:focus{
 	background-color: beige;
 }
 
-label{
-	font-weight: 800;
+.placeholder{
+	font-weight: 500;
+	position: absolute;
+	left: 12px;
+	top: 20%;
 }
 
 .line{

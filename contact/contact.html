@@ -12,8 +12,8 @@
         <div id="headtext" class="clay-style">
             <h1>Do you want</h1>
             <div id="rotatingWords">
-                <span>a quotation?</span>
-                <span>to ask a question?</span>
+                <span class="headerspan">a quotation?</span>
+                <span class="headerspan">to ask a question?</span>
             </div>
         </div>
         <a class="arrowDown" href="#main">&#9660;</a>
@@ -32,19 +32,29 @@
             </div>
             <div class="inputfields">
                 <div class="leftform">
-                    <label for="firstname">first name</label>
-                    <input type="text" id="firstName" required>
-                    <label for="email">email</label>
-                    <input type="text" id="email" required>
-                    <label for="phone">phone</label>
-                    <input type="text" id="phone" required>
+                    <label>
+                        <input type="text"/>
+                        <span class="placeholder">First Name</span>
+                    </label>
+                    <label>
+                        <input type="text"/>
+                        <span class="placeholder">Email</span>
+                    </label>
+                    <label>
+                        <input type="text"/>
+                        <span class="placeholder">Phone Number</span>
+                    </label>
                 </div>
                 <div class="line"></div>
                 <div class="rightform">
-                    <label for="lastname">last name</label>
-                    <input type="text" id="lastname" required>
-                    <label for="question or quotation">ask me a</label>
-                    <textarea rows="10" name="qorq" placeholder="question or quotation" id="question or quotation" required></textarea>
+                    <label>
+                        <input type="text"/>
+                        <span class="placeholder">Last Name</span>
+                    </label>
+                    <label>
+                        <textarea rows="10" cols="25"></textarea>
+                        <span class="placeholder"></span>
+                    </label>
                 </div>
             </div>
         </form>
