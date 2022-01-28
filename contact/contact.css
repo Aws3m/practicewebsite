@@ -154,33 +154,54 @@ form{
 
 label{
 	position: relative;
+	font-size: 14px;
+	padding-top: 20px;
+	margin-bottom: 5px;
 }
 
 input{
 	height: 30px;
-	border: none;
-	appearance: none;
-	border-radius: 10px;
-	outline: none;
-	background: linear-gradient(rgba(16, 70, 40, 0.2), rgba(46, 107, 74, 0.5));
-	padding: 5px;
-}
-input:focus{
-	background-color: beige;
-}
-textarea{
-	border-radius: 10px;
-	padding: 5px;
-}
-textarea:focus{
-	background-color: beige;
+	background: none;
+	border: 2px solid #ddd;
+	transition: border-color 0.3s ease;
+	font-size: 14px;
+	border-radius: 5px;
 }
 
 .placeholder{
-	font-weight: 500;
 	position: absolute;
 	left: 12px;
-	top: 20%;
+	top: calc(50% + 10px);
+	transform: translateY(-50%);
+	color: #aaa;
+	transition: top 0.3s ease,
+				color 0.3s ease;
+}
+input:valid + .placeholder,
+input:focus + .placeholder{
+	top: 20px;
+	font-size: 10px;
+	color: #222;
+	background: rgb(241, 234, 234);
+	border: 2px solid #ddd;
+	z-index: 1;
+}
+
+input + .placeholder{
+	padding: 0 5px;
+	left: 8px;
+}
+input:valid,
+input:focus{
+	border-color: #222;
+	transition-delay: 0.1s;
+}
+
+textarea{
+	border-radius: 5px;
+	border: 2px solid #ddd;
+	padding: 10px;
+	background: none;
 }
 
 .line{
