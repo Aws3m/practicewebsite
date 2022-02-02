@@ -30,8 +30,10 @@ body {
 	#mainpage{
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		padding: 1px;
-		gap: 2px;
+		gap: 10px;
 	}
 }
 
