@@ -29,6 +29,7 @@ body {
 		height: auto;
 		flex-direction: column;
 		justify-content: center;
+		gap: 10px;
 	}
 }
 
@@ -64,6 +65,12 @@ body {
 	left: 0;
 	bottom: -5px;
 	
+}
+
+@media screen and (max-width: 414px) {
+	.footerhead::after{
+		width: 100%;
+	}
 }
 
 .footerlinks{
