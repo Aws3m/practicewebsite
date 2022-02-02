@@ -14,12 +14,6 @@ body {
 	min-height: 100%;
 }
 
-@media screen and (max-width: 412px){
-	body{
-		height: 100vh;
-	}
-}
-
 #mainPage {
 	background: url("../pictures/code_text_colorful_140555_2560x1440.jpg");
 	background-size: cover;
@@ -32,14 +26,14 @@ body {
 	gap: 50px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 414px) {
 	#mainpage{
 		display: flex;
 		flex-direction: column;
 		padding: 1px;
+		gap: 2px;
 	}
 }
-
 
 .clay-style{
 	border-radius: 10px;
@@ -59,7 +53,7 @@ body {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 414px) {
 	#headtext{
 		display: flex;
 		flex-direction: column;
@@ -76,7 +70,7 @@ h1 {
 	letter-spacing: 2px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 414px) {
 	h1{
 		margin-top: 10px;
 	}
@@ -132,7 +126,8 @@ span {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 600px;
+		gap: 10px;
+		height: 700px;
 		width: 85%;
 		padding: 20px;;
 	}
@@ -143,7 +138,7 @@ span {
 	 flex-direction: column;
 	 justify-content: center;
 	 align-items: center;
-	 gap: 6em;
+	 gap: 1em;
  }
 
  @media screen and (max-width: 412px) {

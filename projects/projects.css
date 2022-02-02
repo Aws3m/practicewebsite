@@ -8,6 +8,14 @@
 	position: relative;
 }
 
+@media screen and (max-width: 414px) {
+	.header{
+		height: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
 .headertext{
 	height: 150px;
 	display: flex;
@@ -17,6 +25,12 @@
 	padding: 80px;
 	gap: 1em;
 	background: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 414px) {
+	.headertext{
+		width: 200px;
+	}
 }
 
 h1{
@@ -93,6 +107,12 @@ h1{
 	transition: 0.2s;
 }
 
+@media screen and (max-width: 414px) {
+	.arrowDown, .bol1, .bol2, .bol3, .bol4, .bol5{
+		display: none;
+	}
+}
+
 .arrowDown:hover{
 	transform: scale(1.05);
 }
@@ -103,6 +123,11 @@ h1{
 	flex-wrap: wrap;
 	gap: 2.2em;
 	background: rgb(43, 24, 24);
+}
+@media screen and (max-width: 414px) {
+	#projects{
+		gap: 1rem;
+	}
 }
 
 .projectContainer{
