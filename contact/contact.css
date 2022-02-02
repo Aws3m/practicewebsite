@@ -1,12 +1,4 @@
-#main{
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	gap: 5%;
-	height: auto;
-	padding: 5px;
-	background: grey;
-}
+
 .header{
 	display: flex;
 	justify-content: center;
@@ -19,6 +11,13 @@
 	background-position: right;
 	z-index: 1;
 	position: relative;
+}
+
+@media screen and (max-width: 414px){
+	.header{
+		display: flex;
+		justify-content: center;
+	}
 }
 
 #headtext {
@@ -34,8 +33,14 @@
 	display: flex;
 	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.9);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 414px) {
+	#headtext{
+		display: flex;
+		flex-direction: column;
+		height: 110px;
+	}
 }
 
 h1 {
@@ -89,10 +94,35 @@ h1 {
 	text-decoration: none;
 }
 
+@media screen and (max-width: 414px) {
+	.arrowDown{
+		visibility: hidden;
+	}
+}
+
 .arrowDown:hover{
 	transform:scale(1.05);
 }
 
+#main{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 5%;
+	height: auto;
+	padding: 5px;
+	background: grey;
+}
+
+@media screen and (max-width: 414px){
+	#main{
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 10px;
+		width: 100vw;
+	}
+}
 .calltext{
 	display: flex;
 	flex-direction: column;
@@ -134,6 +164,7 @@ form{
 	padding: 50px;
 	gap: 1rem;
 }
+
 .formheader{
 	display: flex;
 	justify-content: center;
@@ -143,6 +174,16 @@ form{
 .inputfields{
 	display: flex;
 	gap: 2rem;
+}
+
+@media screen and (max-width:414px){
+	.inputfields{
+		flex-direction: column;
+	}
+
+	.line{
+		display: none;
+	}
 }
 .leftform, .rightform{
 	display: flex;
