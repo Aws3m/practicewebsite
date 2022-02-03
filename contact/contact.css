@@ -263,3 +263,30 @@ textarea{
 	border-left:grey 2px solid;
 	width: 1px;
 }
+
+.buttondiv{
+	display: flex;
+	justify-content: center;
+}
+button{
+	background-color:rgba(245, 246, 252, 0.52);
+	border: 2px solid #ddd;
+	padding: 10px;
+	width: 150px;
+	transition: 0.2s
+}
+
+button:hover{
+	border-color: #222;
+	letter-spacing: 5px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+	.homeButton{
+		font-size: 10px;
+		top: 10px;
+		left: 5px;
+		padding: 10px;
+	}
+}

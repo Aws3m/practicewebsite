@@ -18,7 +18,7 @@ body {
 	background: url("../pictures/code_text_colorful_140555_2560x1440.jpg");
 	background-size: cover;
 	clip-path: polygon(98% 0, 100% 51%, 98% 100%, 0% 100%, 2% 50%, 0% 0%);
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -32,8 +32,8 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 1px;
-		gap: 10px;
+		padding: 5px;
+		gap: 5px;
 	}
 }
 
@@ -129,7 +129,7 @@ span {
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
-		height: 700px;
+		height: 600px;
 		width: 85%;
 		padding: 20px;;
 	}
