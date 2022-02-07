@@ -124,10 +124,11 @@ h1{
 	gap: 2.2em;
 	background: rgb(43, 24, 24);
 }
+
 @media screen and (max-width: 414px) {
 	#projects{
 		justify-content: center;
-		align-items: flex-end;
+		
 	}
 }
 
@@ -138,6 +139,12 @@ h1{
 
 .projectContainer:hover .face1, .projectContainer:hover .face2{
 	transform: translateY(0);
+}
+
+@media screen and (max-width: 414px) {
+	.projectContainer .face1, .projectContainer .face2{
+		transform: none;
+	}
 }
 
 img{
