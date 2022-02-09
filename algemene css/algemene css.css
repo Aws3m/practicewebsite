@@ -25,7 +25,7 @@ body {
 	margin-top: auto;
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 426px){
 	.container{
 		height: auto;
 		flex-direction: column;
@@ -42,7 +42,7 @@ body {
 	gap: 2px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.footer-column, .social-media{
 		width: 100%;
 		justify-content: center;
@@ -69,7 +69,7 @@ body {
 	
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.footerhead::after{
 		width: 100%;
 	}
@@ -134,8 +134,12 @@ body {
 	background: white;
 	transition: 0.2s;
 } 
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 769px){
+	#gotop{
+		display: none;
+	}
+}
+@media screen and (max-width: 426px){
 	#gotop{
 		display: none;
 	}
@@ -164,7 +168,7 @@ body {
 	transition: 0.2s;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.homeButton{
 		font-size: 10px;
 		top: 10px;

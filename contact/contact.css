@@ -12,8 +12,16 @@
 	z-index: 1;
 	position: relative;
 }
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 769px){
+	.header{
+		display: flex;
+		justify-content: center;
+		height: 660px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+@media screen and (max-width: 426px){
 	.header{
 		display: flex;
 		justify-content: center;
@@ -37,8 +45,16 @@
 	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.9);
 }
-
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 769px) {
+	#headtext{
+		display: flex;
+		flex-direction: column;
+		height: 100px;
+		align-items: center;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 426px) {
 	#headtext{
 		display: flex;
 		flex-direction: column;
@@ -97,7 +113,7 @@ h1 {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.arrowDown{
 		display: none;
 	}
@@ -112,19 +128,27 @@ h1 {
 	justify-content: center;
 	gap: 5%;
 	height: auto;
-	padding: 5px;
+	padding: 10px;
 	background: grey;
 }
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 769px){
+	#main{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+@media screen and (max-width: 426px){
 	#main{
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 		gap: 1rem;
-		padding: 5px;
 	}
 }
+
 .calltext{
 	display: flex;
 	flex-direction: column;
@@ -135,10 +159,14 @@ h1 {
 	align-items: center;
 	width: 300px;	
 }
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 769px) {
 	.calltext{
-		width: 260px;
+		min-width: 480px;
+	}
+}
+@media screen and (max-width: 426px){
+	.calltext{
+		min-width: 260px;
 	}
 }
 
@@ -208,6 +236,7 @@ h1 {
 	color: white;
 	transform: rotateY(180deg);
   }
+
 form{
 	display: flex;
 	justify-content: center;
@@ -218,9 +247,9 @@ form{
 	gap: 1rem;
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 426px){
 	form{
-		width: 260px;
+		min-width: 260px;
 	}
 }
 
@@ -235,7 +264,7 @@ form{
 	gap: 2rem;
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:426px){
 	.inputfields{
 		flex-direction: column;
 	}
@@ -328,7 +357,7 @@ button:hover{
 	cursor: pointer;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.homeButton{
 		font-size: 10px;
 		top: 10px;

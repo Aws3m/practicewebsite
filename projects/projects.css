@@ -7,8 +7,14 @@
 	z-index: 1;
 	position: relative;
 }
-
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 769px) {
+	.header{
+		height: 670px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+@media screen and (max-width: 426px) {
 	.header{
 		height: auto;
 		padding-top: 5px;
@@ -27,7 +33,7 @@
 	background: rgba(255, 255, 255, 1);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.headertext{
 		width: 200px;
 	}
@@ -106,8 +112,12 @@ h1{
 	text-decoration: none;
 	transition: 0.2s;
 }
-
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 769px) {
+	.bol1, .bol2, .bol3, .bol4, .bol5{
+		display: none;
+	}
+}
+@media screen and (max-width: 426px) {
 	.arrowDown, .bol1, .bol2, .bol3, .bol4, .bol5{
 		display: none;
 	}
@@ -124,11 +134,14 @@ h1{
 	gap: 2.2em;
 	background: rgb(43, 24, 24);
 }
-
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 769px) {
 	#projects{
 		justify-content: center;
-		
+	}
+}
+@media screen and (max-width: 426px) {
+	#projects{
+		justify-content: center;
 	}
 }
 
@@ -140,7 +153,11 @@ h1{
 .projectContainer:hover .face1, .projectContainer:hover .face2{
 	transform: translateY(0);
 }
-
+@media screen and (max-width: 769px) {
+	.projectContainer .face1, .projectContainer .face2{
+		transform: none;
+	}
+}
 @media screen and (max-width: 414px) {
 	.projectContainer .face1, .projectContainer .face2{
 		transform: none;
@@ -172,7 +189,7 @@ h3{
 	transform: translateY(100px);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 426px) {
 	.face1{
 		transform: translateY(-100px);
 	}
