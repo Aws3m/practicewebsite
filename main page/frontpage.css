@@ -44,7 +44,7 @@ body {
 #headtext {
 	top: 10px;
 	left: 5px;
-	width: 50%;
+	width: 60%;
 	height: 40px;
 	padding: 20px;
 	box-sizing: content-box;
@@ -121,7 +121,7 @@ span {
 
 .navcard{
 	background:rgba(255, 255, 255, 0.9);
-	width: 52%;
+	width: 64%;
 	display: flex;
 	justify-content: center;
 	align-items: center;

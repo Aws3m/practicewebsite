@@ -1,5 +1,5 @@
 .header{
-	height: 760px;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,7 +9,7 @@
 }
 @media screen and (max-width: 769px) {
 	.header{
-		height: 670px;
+		height: 100vh;
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
@@ -133,6 +133,12 @@ h1{
 	flex-wrap: wrap;
 	gap: 2.2em;
 	background: rgb(43, 24, 24);
+}
+
+@media screen and (max-width: 1024px) {
+	#projects{
+		gap: 1.5em;
+	}
 }
 @media screen and (max-width: 769px) {
 	#projects{
