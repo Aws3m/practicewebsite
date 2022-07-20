@@ -22,14 +22,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	gap: 50px;
 }
 
 @media screen and (max-width: 414px) {
 	#mainpage{
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
@@ -119,63 +116,47 @@ span {
 	}
 }
 
-.navcard{
+#nav{
 	background:rgba(255, 255, 255, 0.9);
-	width: 64%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 5em;
-	height: 400px;
+	flex-direction: column;
+	height: auto;
 }
 
-@media screen and (max-width: 1000px) {
-	.navcard{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		height: 600px;
-		width: 85%;
-		padding: 20px;;
-	}
-}
- .navigation{
-	 width: 40%;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: center;
-	 align-items: center;
-	 gap: 1em;
- }
-
- @media screen and (max-width: 412px) {
-	 .navigation{
-		 gap: 1rem;
-		 width: 70%;
-	 }
- }
-
-.nav {	
+.navitem {	
+	display: flex;
 	text-decoration: none;
 	letter-spacing: 5px;
-	height: 20px;
-	padding: 10px;
-	display: block;
-	width: 60%;
-	text-align: center;
+	height: 500px;
 	color: rgb(0, 0, 0);
 	background-color: rgba(255, 255, 255, 0.9);
 	font-weight: 800;
 	transition: 0.2s;
 }
 
-@media screen and (max-width: 414px){
-	.nav{
-		width: 100%;
-	}
+.arrowDown{
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.25), -10px -10px 30px rgba(0, 0, 0, 0.1),
+	inset -5px -5px 15px rgba(0, 0, 0, 0.5);
+	position: absolute; left: 47%; top: 90%;
+	border-radius: 10px;
+	font-size: 20x;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	transition: 0.2s;
 }
-.nav:hover {
-	letter-spacing: 10px;
+
+img{
+	width: 50%;
+	height: 500px;
+	width:auto;
+}
+
+a{
+	width: 50%;
 }
