@@ -16,6 +16,7 @@ body {
 
 #mainPage {
 	background: url("../pictures/code_text_colorful_140555_2560x1440.jpg");
+	backdrop-filter: blur(5px);
 	background-size: cover;
 	clip-path: polygon(98% 0, 100% 51%, 98% 100%, 0% 100%, 2% 50%, 0% 0%);
 	min-height: 100vh;
@@ -32,12 +33,6 @@ body {
 	}
 }
 
-.clay-style{
-	border-radius: 10px;
-	box-shadow: 25px 25px 50px rgba(9, 148, 255, 0.25), -10px -10px 30px rgba(9, 148, 255, 0.1),
-	inset -5px -5px 15px rgba(9, 148, 255, 0.5);
-}
-
 #headtext {
 	top: 10px;
 	left: 5px;
@@ -47,7 +42,6 @@ body {
 	box-sizing: content-box;
 	display: flex;
 	justify-content: center;
-	background-color: rgba(255, 255, 255, 0.9);
 }
 @media screen and (max-width: 769px) {
 	#headtext{
@@ -71,7 +65,7 @@ body {
 }
 
 h1 {
-	color: grey;
+	color: rgb(0, 0, 0);
 	font-size: 30px;
 	letter-spacing: 2px;
 }
@@ -92,7 +86,7 @@ span {
 	padding-left: 10px;
 	font-size: 32px;
 	font-weight: 600;
-	color: rgb(0, 0, 0);
+	color: rgb(2, 2, 2);
 	animation: spin_words 6s infinite;
 }
 
@@ -117,46 +111,54 @@ span {
 }
 
 #nav{
-	background:rgba(255, 255, 255, 0.9);
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	height: auto;
+	gap: 5rem;
+	background-color: #85FFBD;
+	background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .navitem {	
 	display: flex;
+	gap: 1rem;
+	padding: 3rem;
 	text-decoration: none;
 	letter-spacing: 5px;
 	height: 500px;
 	color: rgb(0, 0, 0);
-	background-color: rgba(255, 255, 255, 0.9);
 	font-weight: 800;
-	transition: 0.2s;
 }
 
 .arrowDown{
 	width: 50px;
 	height: 50px;
-	background: rgba(255, 255, 255, 1);
-	box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.25), -10px -10px 30px rgba(0, 0, 0, 0.1),
-	inset -5px -5px 15px rgba(0, 0, 0, 0.5);
 	position: absolute; left: 47%; top: 90%;
-	border-radius: 10px;
-	font-size: 20x;
+	font-size: 20px;
 	text-align: center;
 	line-height: 50px;
 	text-decoration: none;
-	transition: 0.2s;
+	animation: move 2s linear 2s infinite ;
+	padding: 0;
 }
 
+
+@keyframes move{
+	25%{
+		top: 92%;
+	}
+	50%{
+		top: 90%;
+	}
+	75%{
+		top: 90%;
+	}
+	10%{
+		top: 90%;
+	}
+}
 img{
 	width: 50%;
 	height: 500px;
 	width:auto;
-}
-
-a{
-	width: 50%;
 }
