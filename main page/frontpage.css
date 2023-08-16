@@ -20,9 +20,17 @@ body {
 	min-height: 100vh;
 	display: flex;
 	justify-content: space-between;
-
 	padding-left: 5rem;
 	padding-right: 5rem;
+}
+
+@media screen and (max-width: 769px) {
+	#mainPage{
+		justify-content: center;
+		flex-direction: column;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 
 #begin-quote {
@@ -32,6 +40,12 @@ body {
 	width: 50%;
 	font-family:'Times New Roman', Times, serif;
 }
+@media screen and (max-width: 769px) {
+	.quote-text{
+		width: 100%;
+		margin-top: 30%;
+	}
+}
 #hi{
 	font-size: 8rem;
 }
@@ -40,8 +54,28 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
+}
+@media screen and (max-width: 769px) {
+	.about-me{
+		width: 100%;
+	}
+}
+.pasfoto{
+	-webkit-clip-path: circle(41.0% at 50% 50%);
+                clip-path: circle(41.0% at 50% 50%); position: relative; z-index: 1000;
+}
+@media screen and (max-width: 769px) {
+	.pasfoto{
 
+	}
+}
+.about-me-text{
+	width: 50%; height: fit-content; font-size: 1rem; color:rgb(164, 172, 180); margin-top: 5%; transform: translateY(-60%);
+}
+@media screen and (max-width: 769px) {
+	.about-me-text{
+		width: 100%; height: fit-content; font-size: 1rem; color:rgb(164, 172, 180); margin-top: 5%; transform: translateY(-70%);
+	}
 }
 #nav{
 	display: flex;
@@ -95,7 +129,11 @@ body {
 	animation: move 2s linear 2s infinite ;
 	padding: 0;
 }
-
+@media screen and (max-width: 769px) {
+	.arrowDown{
+		display: none;
+	}
+}
 
 @keyframes move{
 	25%{
@@ -124,21 +162,10 @@ body {
 	justify-content: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 769px) {
 	#projects{
 		gap: 1.5em;
 	}
-}
-@media screen and (max-width: 769px) {
-	#projects{
-		justify-content: center;
-	}
-}
-@media screen and (max-width: 426px) {
-	#projects{
-		justify-content: center;
-	}
-}
 
 .projectContainer{
 	height: fit-content;
