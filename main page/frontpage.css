@@ -64,11 +64,7 @@ body {
 	-webkit-clip-path: circle(41.0% at 50% 50%);
                 clip-path: circle(41.0% at 50% 50%); position: relative; z-index: 1000;
 }
-@media screen and (max-width: 769px) {
-	.pasfoto{
 
-	}
-}
 .about-me-text{
 	width: 50%; height: fit-content; font-size: 1rem; color:rgb(164, 172, 180); margin-top: 5%; transform: translateY(-60%);
 }
@@ -166,7 +162,7 @@ body {
 	#projects{
 		gap: 1.5em;
 	}
-
+}
 .projectContainer{
 	height: fit-content;
 	width: 26%;
@@ -285,8 +281,4 @@ button:hover{
 .leftform{
 	display: flex;
 	flex-direction: column;
-}
-
-#main{
-	padding: 3rem;
 }
