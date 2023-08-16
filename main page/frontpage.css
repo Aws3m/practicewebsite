@@ -19,21 +19,30 @@ body {
 #mainPage {
 	min-height: 100vh;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
 #begin-quote {
 	font-size: 5rem;
 }
 .quote-text{
-	width: 70%;
+	width: 50%;
 	font-family:'Times New Roman', Times, serif;
 }
 #hi{
 	font-size: 8rem;
 }
+.about-me{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
 
+}
 #nav{
 	display: flex;
 	flex-direction: column;
