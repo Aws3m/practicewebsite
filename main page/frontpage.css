@@ -11,9 +11,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	background: #0F2027;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #mainPage {
@@ -21,6 +18,9 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 5rem;
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (max-width: 769px) {
@@ -33,14 +33,14 @@ body {
 }
 
 #begin-quote {
-	font-size: 7rem;
+	font-size: 3rem;
 	font-weight: 400;
 	font-family: 'Macondo', cursive;
-	background-color: linear-gradient(#fff, #caadad);
 }
 .quote-text{
 	width: 50%;
-	
+	display: flex;
+	justify-content: center; align-items: center;
 }
 @media screen and (max-width: 769px) {
 	.quote-text{
@@ -48,7 +48,7 @@ body {
 	}
 }
 #hi{
-	font-size: 8rem;
+	font-size: 4rem;
 }
 .about-me{
 	display: flex;
@@ -77,14 +77,18 @@ body {
 		width: 100%; height: fit-content; font-size: 1rem; color:rgb(164, 172, 180); 
 	}
 }
-
+#servicesheader{
+	text-align: center;
+	padding: 1rem;
+}
 #services{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 3rem;
-	flex-wrap: wrap;
+	margin-bottom: 3rem;
+	height: fit-content;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1050px) {
 	#services{
 		display: flex;
 		flex-direction: column;
@@ -96,10 +100,65 @@ body {
 
 .service-item{
 	width: 25%;
+	display: flex;
+	flex-direction: column;
+	transition: all .5s ;
+	height: 20rem;
+	align-items: center;
 }
 
+.service-item:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+}
+@media screen and (max-width: 1050px) {
+	.service-item{
+		width: 90%;
+	}
+}
+.service-border{
+	border: 2px solid #00A0D2;
+}
+
+.servicetagline{
+	border: 2px solid #00A0D2;
+	width: fit-content;
+	margin: 1rem;
+	padding: 1rem;
+}
+#head-service-wp{
+	height:200px;
+	background-image: url(../pictures/wordpress-bg-medblue.png);
+	background-color: #4d7e4c;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);	
+}
+#head-service-vscode{
+	height:200px;
+	background-image: url(../pictures/bootstrap-4-beta-whats-new.jpg);
+	background-color: #4d7e4c;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);}
+#head-service-vscustom{
+	height:200px;
+	background-image: url(../pictures/1_DIWgQmUKDW_TsDbLWYUtDg.png);
+	background-color: #4d7e4c;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);}
+@media screen and (max-width: 1050px) {
+	.head-service{
+		transform: scale(0.2);
+	}
+}
 .servicepara{
-	width: 100%;
+	width: fit-content;
+	margin: 1rem;
 }
 #nav{
 	display: flex;
@@ -213,7 +272,10 @@ p{
 	padding: 1rem;
 }
 
-
+#main{
+	display: flex;
+	justify-content: center;
+}
 
 .formheader{
 	font-weight: 500;
@@ -249,7 +311,7 @@ input::placeholder, textarea::placeholder{
 
 button{
 	background: transparent;
-    width: 50%;
+    width: fit-content;
     padding: 1em;
     margin-bottom: 2em;
     border: none;
