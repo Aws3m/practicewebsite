@@ -2,163 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>AWSEM WEBDEV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../algemene css/algemene css.css">
     <link rel="stylesheet" type="text/css" href="../main page/frontpage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Macondo&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Foldit:wght@100&family=Macondo&family=Press+Start+2P&display=swap" rel="stylesheet">
     <script defer src="indexPage.ts"></script>
+    <script defer src="mobile-menu.js"></script>
 </head>
-<body>
-    <div id="mainPage">
-        <div class="quote-text">
-            <q id="begin-quote"><span id="hi">Hi,</span>   i am Sem </br><span style="font-size: 5rem; color:rgb(163, 178, 192)"><>web developer!<></span> </br> You <i style="color:rgb(73, 114, 150)">dream</i> it, I translate it into a <i style="color:rgb(73, 114, 150)">beautiful</i> webdesign
-            </q>
+<body class="flex flex-col">
+    <header class=" mobile-header flex justify-between items-center p-3 h-fit">
+        <h1 class="poppins-bold"><span style="font-size: 150%;" >A</span>WSEM WEBDEV</h1>
+        <div class=" hamburger-menu flex flex-col gap-1 w-5 hover:cursor-pointer z-10" onclick="toggleMenu()">
+            <div class="menu-div border-2 rounded"></div>
+            <div class="menu-div border-2 rounded"></div>
+            <div class="menu-div border-2 rounded"></div>
         </div>
-        <div class="about-me" id="aboutme" style="position: relative">
-            <div class="clay-style about-me-text">
-                <img class="pasfoto" src="../pictures/pasfoto.PNG" alt="sem">
-                    <p style="width: 100%;">My name is Sem Radoes. In 2013 I befriended people who work in IT. 
-                        I was involved in their hobby projects and a wide world opened before my eyes.
-                        My education at that moment prevented me from studying ICT. 
-                        Throughout my career as pedagogue, i realised this is not a job that would make me happy.
-                        It wasn't inline with my interests. When the opportunity arose, I started a bachelors degree. 
-                        Soon i realised that an overall ICT degree wasn't what i was interested in.
-                        I wanted to be a developer for web apps and websites. I was interested the most in the front end. 
-                        So i enrolled in a front end developer course and now i am an enthousiastic front end developer who works as a freelancer.</p>
-            </div>
+    </header>
+    <div class="slidetoggle hidden">
+        <div class="mobile-menu flex flex-col justify-center items-center">
+            <a class="menu-item p-2 border-b-2 border-b-emerald-200 hover:bg-lime-100 hover:cursor-pointer w-full text-center"><h3>About</h3></a>
+            <a class="menu-item p-2 border-b-2 border-b-emerald-200 hover:bg-lime-100 hover:cursor-pointer w-full text-center"><h3>Pricing</h3></a>
+            <a class="menu-item p-2 border-b-2 border-b-emerald-200 hover:bg-lime-100 hover:cursor-pointer w-full text-center"><h3>Core values</h3></a>
+            <a class="p-2"><h3>Contact</h3></a>
         </div>
-        <a class="arrowDown clay-style" href="#servicesheader">&#9660;</a>
     </div>
-    <h1 id="servicesheader">Learn more about my services</h1>
-    <div id="services">
-        <div class="service-item">
-            <div class="service-border">
-                <div id="head-service-wp"></div>
-                <h1 class="servicetagline">Wordpress Website</h1>
-                <p class="servicepara">A website made from a standard wordpress template but accomodated to your needs</p>
-            </div>
+    <header class="desktop-header flex justify-between items-center p-3 h-fit">
+        <h1 class="poppins-bold text-5xl"><span style="font-size: 150%;" >A</span>WSEM WEBDEV</h1>
+        <div class="desktop-menu flex gap-10 w-fit text-5xl">
+            <a class="hover:cursor-pointer"><h3>About</h3></a>
+            <a class="hover:cursor-pointer"><h3>Pricing</h3></a>
+            <a class="hover:cursor-pointer"><h3>Core Values</h3></a>
+            <a class="hover:cursor-pointer"><h3>Contact</h3></a>
         </div>
-        <div class="service-item">
-            <div class="service-border">
-                <div id="head-service-vscode"></div>
-                <h1 class="servicetagline">Custom website with styling framework</h1>
-                <p class="servicepara">A website made from scratch but styled with a styling template so that no other styling needs to be added</p>
-            </div>
-        </div>
-        <div class="service-item">
-            <div class="service-border">
-                <div id="head-service-vscustom"></div>
-                <h1 class="servicetagline">Custom website from scratch</h1>
-                <p class="servicepara">A website made from scratch with custom styling to fit you needs</p>
+    </header>
+    <div class="flex flex-col justify-center items-center about-me">
+        <div class="section-header text-7xl">About me</div>
+        <div class="lg:flex justify-center p-10 gap-20 h-fit">
+            <div class="w-3/6 flex justify-center"><img src="../pictures/pasfoto.PNG" alt="Sem"></div>
+            <div class="flex flex-col w-3/6">
+                <p>Hi I'm Sem</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo illo nulla neque voluptatum laudantium ullam, temporibus voluptas exercitationem veritatis. Vel nulla iste, porro deleniti eligendi fugiat excepturi! Quis, minus cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, laudantium impedit. Ipsum natus consequatur libero maxime perspiciatis sapiente, amet veritatis asperiores odit architecto dolor possimus veniam quibusdam laborum enim expedita!</p>
             </div>
         </div>
     </div>
-    <div id="nav">
-        <div class="navitem" id="projectdiv">
-            <div class="clay-style projects">
-                <h3>projects</h3>
-
-                <div id="projects">
-                    <div class="projectContainer clay-style">
-                        <img src="../pictures/project.jpg">
-                        <div class="content">
-                            <h3>Project 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Reprehenderit neque architecto minus corrupti quibusdam, 
-                            accusantium eaque inventore eius nesciunt beatae animi ab 
-                            placeat doloribus facere et aperiam! 
-                            Quisquam, consectetur quos!</p>
-                            <a class="discover" href="#">Discover</a>
-
-                        </div>
-                    </div>
-                    <div class="projectContainer clay-style">
-                        <img src="../pictures/project.jpg">
-                        <div class="content">
-                            <h3>Project 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Reprehenderit neque architecto minus corrupti quibusdam, 
-                            accusantium eaque inventore eius nesciunt beatae animi ab 
-                            placeat doloribus facere et aperiam! 
-                            Quisquam, consectetur quos!</p>
-                            <a class="discover" href="#">Discover</a>
-
-                        </div>
-                    </div>
-                        <div class="projectContainer clay-style">
-                            <img src="../pictures/project.jpg">
-                            <div class="content">
-                                <h3>Project 1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reprehenderit neque architecto minus corrupti quibusdam, 
-                                accusantium eaque inventore eius nesciunt beatae animi ab 
-                                placeat doloribus facere et aperiam! 
-                                Quisquam, consectetur quos!</p>
-                                <a class="discover" href="#">Discover</a>
-
-                            </div>
-                        </div>
-                        <div class="projectContainer clay-style">
-                            <img src="../pictures/project.jpg">
-                            <div class="content">
-                                <h3>Project 1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reprehenderit neque architecto minus corrupti quibusdam, 
-                                accusantium eaque inventore eius nesciunt beatae animi ab 
-                                placeat doloribus facere et aperiam! 
-                                Quisquam, consectetur quos!</p>
-                                <a class="discover" href="#">Discover</a>
-
-                            </div>
-                        </div>
-                        <div class="projectContainer clay-style">
-                            <img src="../pictures/project.jpg">
-                            <div class="content">
-                                <h3>Project 1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reprehenderit neque architecto minus corrupti quibusdam, 
-                                accusantium eaque inventore eius nesciunt beatae animi ab 
-                                placeat doloribus facere et aperiam! 
-                                Quisquam, consectetur quos!</p>
-                                <a class="discover" href="#">Discover</a>
-
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>    
-        </div>
-        </div>
-        <div id="main">
-            <form class="clay-style">
-                <h1 class="formheader">Send me an Email</h1>
-                <div class="inputfields">
-                    <div class="leftform">
-                        <label>
-                            <input type="text" placeholder="First Name" required/>
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Last Name" required/>
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Email" required/>
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Phone number" required/>
-                        </label>
-                    </div>
-                    <div class="rightform">
-                        <textarea rows="15" placeholder="write me"></textarea>
-                    </div>
-                </div>
-                <div class="buttondiv">
-                    <button type="button">Send</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 </body>
 </html>
