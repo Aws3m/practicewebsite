@@ -4,61 +4,70 @@
     <meta charset="UTF-8">
     <title>AWSEM WEBDEV</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../algemene css/algemene css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="indexPage.ts"></script>
     <script defer src="mobile-menu.js"></script>
-    <script defer src="mobile-menu.js"></script>
+    <script defer src="../scripts/getCurrentYearForCopyright.js"></script>
 </head>
-<body class="flex flex-col relative">
-    <header class="flex justify-between items-center p-3 h-20 hidden" id="mobile-header">
-        <h1 class="poppins-bold webdev"><span class="a" >A</span>WSEM WEBDEV</h1>
-        <div class=" hamburger-menu flex flex-col gap-1 w-5 hover:cursor-pointer" onclick="toggleMenu()">
-            <div class="menu-div rounded"></div>
-            <div class="menu-div rounded"></div>
-        </div>
-    </header>
-    <div class="slidetoggle absolute top-20 w-full hidden z-10">
-        <div class="mobile-menu flex flex-col justify-center items-center">
-            <a class="menu-item p-2 border-b-2 border-b-sky-600 hover:backdrop-blur-none hover:cursor-pointer w-full text-center"><h3>About</h3></a>
-            <a class="menu-item p-2 border-b-2 border-b-sky-600 hover:backdrop-blur-none hover:cursor-pointer w-full text-center"><h3>Pricing</h3></a>
-            <a class="menu-item p-2 border-b-2 border-b-sky-600 hover:backdrop-blur-none hover:cursor-pointer w-full text-center"><h3>Core values</h3></a>
-            <a class="p-2 hover:backdrop-blur-none hover:cursor-pointer w-full text-center"><h3>Contact</h3></a>
-        </div>
+<header class="justify-between items-center p-3 h-20 w-full" id="mobile-header">
+    <h1 class="font-bold webdev"><span class="a" >A</span>WSEM WEBDEV</h1>
+    <div class=" hamburger-menu flex flex-col gap-1 w-5 hover:cursor-pointer" onclick="toggleMenu()">
+        <div class="menu-div rounded"></div>
+        <div class="menu-div rounded"></div>
     </div>
-    <header class=" flex justify-between items-center p-3 h-fit hidden" id="desktop-header">
-        <h1 class="poppins-bold text-5xl"><span class="a" >A</span>WSEM WEBDEV</h1>
-        <div class="desktop-menu flex gap-10 w-fit text-5xl">
-            <a class="hover:cursor-pointer"><h3>About</h3></a>
-            <a class="hover:cursor-pointer"><h3>Pricing</h3></a>
-            <a class="hover:cursor-pointer"><h3>Core Values</h3></a>
-            <a class="hover:cursor-pointer"><h3>Contact</h3></a>
-        </div>
-    </header>
-    <div class="flex justify-center mt-2">
-        <div class="flex flex-col justify-center items-center p-10 gap-3 h-fit rounded-md about-section">
-            <div class="flex justify-center ring-offset-8"><img src="../pictures/pasfoto.PNG" alt="Sem" id="pasfoto" class="backdrop-sepia"></div>
-            <div class="flex flex-col items-center gap-3">
-                <p class="about-blue font-bold"><span class="font-black border-2 p-2 border-cyan-600 hi">Hi</span>, I'm Sem</p>
-                <p class="about-blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo illo nulla neque voluptatum laudantium ullam, temporibus voluptas exercitationem veritatis. Vel nulla iste, porro deleniti eligendi fugiat excepturi! Quis, minus cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, laudantium impedit. Ipsum natus consequatur libero maxime perspiciatis sapiente, amet veritatis asperiores odit architecto dolor possimus veniam quibusdam laborum enim expedita!</p>
+</header>
+<div class="slidetoggle absolute top-20 w-full hidden z-10">
+    <div class="mobile-menu flex flex-col justify-center items-center divide-y divide-solid divide-cyan-600">
+        <a class="menu-item p-2 w-full text-center about-blue"><h3>About</h3></a>
+        <a class="menu-item p-2 w-full text-center about-blue"><h3>Pricing</h3></a>
+        <a class="menu-item p-2 w-full text-center about-blue"><h3>Core values</h3></a>
+        <a class="p-2 hover:backdrop-blur-none hover:cursor-pointer w-full text-center about-blue menu-item"><h3>Contact</h3></a>
+    </div>
+</div>
+<header class="justify-between items-center p-3 h-fit w-full" id="desktop-header">
+    <h1 class="font-bold webdev"><span class="a " >A</span>WSEM WEBDEV</h1>
+    <div class="desktop-menu flex gap-10 w-fit text-5xl">
+        <a class="hover:cursor-pointer about-orange nav-item"><p>About</p></a>
+        <a class="hover:cursor-pointer about-orange nav-item"><p>Core Values</p></a>
+        <a class="hover:cursor-pointer about-orange nav-item"><p>Pricing</p></a>
+        <a class="hover:cursor-pointer about-orange nav-item"><p>Contact</p></a>
+    </div>
+</header>
+<body class="flex flex-col items-center relative">
+    <div class="page p-3 mt-5">
+        <div class="flex justify-center mt-2">
+            <div class="flex flex-col justify-center items-center p-5 gap-3 w-full h-fit rounded-md about-section">
+                <div class="flex justify-center ring-offset-8"><img src="../pictures/pasfoto.PNG" alt="Sem" id="pasfoto" class="backdrop-sepia"></div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <p class="about-blue font-bold"><span class="font-black border-2 p-2 border-cyan-600 hi">Hi</span> I'm </p>
+                    <p class="about-orange font-bold text-5xl playwrite-us-modern-200 sem">Sem</p>
+                    <p class="about-blue font-bold"><span id="web" class="p-1">Web</span> developer!</p>
+                    <div class="flex justify-center gap-3 items-center w-full">
+                        <p class="about-blue font-bold text-2xl text-center"><span id="your" class="p-1 rounded text-xl">Your</span></p> <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: rgb(218, 165, 32); text-shadow: 0px 1px 27px rgba(218,165,32,1);" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M7.05 4.05A7 7 0 0 1 19 9c0 2.407-1.197 3.874-2.186 5.084l-.04.048C15.77 15.362 15 16.34 15 18a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1c0-1.612-.77-2.613-1.78-3.875l-.045-.056C6.193 12.842 5 11.352 5 9a7 7 0 0 1 2.05-4.95ZM9 21a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Zm1.586-13.414A2 2 0 0 1 12 7a1 1 0 1 0 0-2 4 4 0 0 0-4 4 1 1 0 0 0 2 0 2 2 0 0 1 .586-1.414Z" clip-rule="evenodd"/>
+                            </svg>
+                        <p class="about-beige font-bold"><span id="my" class="p-1 text-xl about-beige">My</span> <span id="skills" class="text-lg font-light"></span> </p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: goldenrod;" fill="currentColor" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0H133.9c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0H487.4C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/></svg>
+                    </div> 
+                    <p class="about-blue font-bold w-full text-center">Let's<span id="together" class="p-1 rounded">WORK</span> on a <span id="masterpiece" class="text-xl">Masterpiece</span></p>
+                    <button id="worktogether" class="bg-white p-3 rounded-3xl w-20 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="30" height="30" style="color: rgb(218, 165, 32);" fill="currentColor"><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L550.2 352H592c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48H516h-4-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48H48c-26.5 0-48 21.5-48 48V304c0 26.5 21.5 48 48 48H156.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123z"/></svg></button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <footer class="h-20 absolute bottom-0" id="footer">
-        <p id="copyright"></p>
-    </footer>
-    <script>
-            if(window.matchMedia("min-width: 768px")){
-                $('#mobile-header').removeClass('hidden');
-            } else {
-                $('#dekstop-header').removeClass('hidden');
-            }
         
-    </script>
+    </div>
+    <div class=" bol bol1"></div>
+    <div class=" bol bol2"></div>
+    <div class=" bol bol3"></div>
+    <div class=" bol bol4"></div>
+    
 </body>
+<footer class="h-20 absolute bottom-0 w-full flex justify-center items-center font-bold about-orange" id="footer">
+    <p id="copyright"></p>
+</footer>
 </html>
