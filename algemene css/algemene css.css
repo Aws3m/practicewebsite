@@ -202,6 +202,11 @@ body{
 @media only screen and (max-width: 769px) {
 	#mobile-header{
 		display: flex;
+		background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+	border: 2px solid rgba(255, 255, 255, 0);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 	}
 	#desktop-header{
 		display: none;
@@ -216,17 +221,12 @@ body{
 		width: 100vw;
 		height: auto;
 	}
-	header{
-		background: rgba(255, 255, 255, 0.5);
-		backdrop-filter: blur(var(--blur));
-		-webkit-backdrop-filter: blur(var(--blur));
-		border: 2px solid rgba(255, 255, 255, 0);
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-	}
+	
 	.webdev{
 		color: var(--orange);
 		transform:none;
 		letter-spacing: 5px;
+		width:max-content;
 	}
 
 	.menu-item{
