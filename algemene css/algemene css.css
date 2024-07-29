@@ -45,9 +45,13 @@
 	font-size: 20px;
 	padding: 10px;
 	border-radius: 15px;
-	text-shadow: 2px 2px 8px rgba(0,0,0,1);	
+	text-shadow: 2px 2px 8px rgba(0,0,0,1);
+	transition: all linear .2s;
 }
-
+.nav-item:hover{
+	text-shadow: 2px 2px 15px rgba(0,0,0,2);
+	color: goldenrod;
+}
 a{
 	text-decoration: none;
 }
@@ -135,6 +139,18 @@ body{
 	height: 100%;
 	width: 50%;
 }
+.webdev{
+	color: var(--orange);
+	transform: rotate(-90deg);
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 8px rgba(0,0,0,1);
+	font-size: 1.5rem;
+	width: 50%;
+}
+
+.desktop-menu{
+	width: 50%;
+}
 
 .about-section{
 	background-image: url('../pictures/iphone-6-iphone-5s-iphone-7-plus-calling-screen-7db3928a21c6e06577e56c98be292603.png');
@@ -159,13 +175,6 @@ body{
 	width: 85%;
 	padding: 5px;
 	border-radius: 15px;
-}
-.webdev{
-	color: var(--orange);
-	transform: rotate(-90deg);
-	letter-spacing: 5px;
-	text-shadow: 2px 2px 8px rgba(0,0,0,1);
-	font-size: 1.5rem;
 }
 #worktogether{
 	background: rgba(255, 255, 255, 0.3);
