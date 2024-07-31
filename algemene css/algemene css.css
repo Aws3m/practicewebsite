@@ -221,7 +221,8 @@ body{
 		display: none;
 	}
 	body{
-		display: block;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 	.body{
 		display: flex;
