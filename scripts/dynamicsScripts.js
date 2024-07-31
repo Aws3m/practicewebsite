@@ -3,10 +3,11 @@
 //         "transform", 'scale(0.95)'
 //       );
 // });
-$('#worktogether').on( "mouseenter", () => {
-    $('#handshake').addClass('animate__animated animate__swing');
-}).on('mouseleave', () => {
-    $('#handshake').removeClass('animate__animated animate__swing');
-});
+
+
+setInterval($('#handshake').addClass('animate__animated animate__swing'), 3000);
+setInterval($('#handshake').removeClass('animate__animated animate__swing'), 4000);
+
+
 
 
