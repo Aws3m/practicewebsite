@@ -201,8 +201,6 @@ body{
 	-webkit-backdrop-filter: blur(var(--blur));
 	border: 2px solid rgba(255, 255, 255, 0);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-	position: absolute;
-	bottom: 0;
 }
 @media only screen and (min-width: 1350px) {
 	.about-section{
