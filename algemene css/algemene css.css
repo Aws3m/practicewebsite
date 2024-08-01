@@ -141,7 +141,7 @@ body{
 	font-size: 150%;
 	color: var(--blue);
 	opacity: .6;
-	margin-right: 10px;
+	text-shadow: 5px 2px 0px var(--greyblue);
 }
 
 
