@@ -76,12 +76,13 @@ body{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: fit-content;
+	height: 100vh;
 	display: flex ;
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
-	width: 100vw;
+	width: 100vw; 
+	position: relative;
 }
 .body{
 	display: flex;
@@ -199,6 +200,8 @@ body{
 	backdrop-filter: blur(var(--blur));
 	-webkit-backdrop-filter: blur(var(--blur));
 	border: 2px solid rgba(255, 255, 255, 0);
+	position: absolute;
+	bottom: 0;
 }
 @media only screen and (min-width: 1350px) {
 	.about-section{
