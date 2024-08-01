@@ -228,7 +228,7 @@ body{
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100vw;
-		min-width: none;height: 100vw;
+		min-height: 100vw;
 	}
 	
 	.webdev{
