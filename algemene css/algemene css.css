@@ -6,7 +6,9 @@
 	--lightest: 	rgb(123, 206, 201);
 	--blur: 20px;
 }
-
+.animate__animated.animate__swing{
+	--animate-duration: 10s;
+}
 .playwrite-us-modern-100 {
 	font-family: "Playwrite US Modern", cursive;
 	font-optical-sizing: auto;
