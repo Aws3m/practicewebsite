@@ -2,7 +2,6 @@
 	--beige: 	rgb(210,235,255);
 	--greyblue: 	rgb(64,64,102);
 	--blue: 	rgb(7, 151, 232);
-	--orange: 	rgb(237,204,111);
 	--lightest: 	rgb(123, 206, 201);
 	--blur: 20px;
 }
@@ -41,7 +40,7 @@ a{
 }
 
 .menu-div{
-	background-color: var(--orange);
+	background-color: var(--beige);
 	height: 3px;
 	box-shadow: 2px 2px 8px rgba(0,0,0,1);
 }
@@ -58,9 +57,7 @@ top: 18px;
 .about-blue{
 	color: var(--blue);
 }
-.about-orange{
-	color: var(--orange);
-}
+
 .about-green{
 	color: var(--lightest);
 }
@@ -129,19 +126,24 @@ body{
 	width: 100%;
 }
 .webdev{
-	color: var(--orange);
-	margin: 0;
-	padding: 0;
+	color: var(--beige);
 	transform: rotate(-90deg);
 	letter-spacing: 5px;
 	text-shadow: 2px 2px 8px rgba(0,0,0,1);
-	font-size: 2vw;
+	font-size: 1.5vw;
 	width: fit-content;
 	text-wrap: nowrap;
 	height: fit-content;
 	text-align: center;
 	align-content: center;
 }
+.a{
+	font-size: 150%;
+	color: var(--blue);
+	opacity: .6;
+	margin-right: 10px;
+}
+
 
 .desktop-menu{
 	width: 50%;
@@ -155,13 +157,9 @@ body{
 .nav-item:hover{
 	cursor: pointer;
 	text-shadow: 2px 2px 15px rgba(0,0,0,2);
-	color: goldenrod;
+	color: var(--greyblue);
 }
 
-.a{
-	font-size: 150%;
-	color: var(--greyblue)
-}
 
 .about-section{
 	background-image: url('../pictures/iphone-6-iphone-5s-iphone-7-plus-calling-screen-7db3928a21c6e06577e56c98be292603.png');
@@ -263,7 +261,7 @@ body{
 	}
 	
 	.webdev{
-		color: var(--orange);
+		color: var(--beige);
 		transform:none;
 		letter-spacing: 5px;
 		width:max-content;
