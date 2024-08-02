@@ -1,0 +1,27 @@
+#footer{
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+	border: 2px solid rgba(255, 255, 255, 0);
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.copyrightfooter{
+	color: antiquewhite;
+	display: flex;
+	flex-direction: column; 
+	width: fit-content;
+}
+
+.social{
+	color: white;
+}
+
+@media only screen and (max-width: 769px) {
+	#footer{
+		justify-content: space-around;
+	}
+}

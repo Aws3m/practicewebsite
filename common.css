@@ -1,0 +1,52 @@
+:root {
+	--beige: 	rgb(210,235,255);
+	--greyblue: 	rgb(64,64,102);
+	--blue: 	rgb(7, 151, 232);
+	--lightest: 	rgb(123, 206, 201);
+	--blur: 20px;
+}
+
+.playwrite-us-modern-100 {
+	font-family: "Playwrite US Modern", cursive;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+  }
+.playwrite-us-modern-200 {
+	font-family: "Playwrite US Modern", cursive;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+  }
+.playwrite-us-modern-300 {
+	font-family: "Playwrite US Modern", cursive;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+  }
+.playwrite-us-modern-400 {
+	font-family: "Playwrite US Modern", cursive;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+  }
+* {
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+
+.about-blue{
+	color: var(--blue);
+}
+
+.about-green{
+	color: var(--lightest);
+}
+.about-greyblue{
+	color: var(--greyblue);
+}
+.about-beige{
+	color: var(--beige);
+}

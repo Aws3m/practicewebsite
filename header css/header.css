@@ -1,0 +1,93 @@
+.menu-div{
+	background-color: var(--greyblue);
+	height: 3px;
+}
+
+.mobile-menu{
+	/* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(var(--blur));
+-webkit-backdrop-filter: var(--blur);
+border: 1px solid rgba(255, 255, 255, 0.3);
+top: 18px;
+}
+
+#mobile-header{
+	display: none;
+}
+#desktop-header{
+	display: flex;
+	background-image: url('../pictures/notebaook transparent background.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 50%;
+}
+
+.webdev{
+	color: var(--greyblue);
+	transform: rotate(-90deg);
+	letter-spacing: 5px;
+	font-size: 1.5vw;
+	width: fit-content;
+	text-wrap: nowrap;
+	height: fit-content;
+	text-align: center;
+	align-content: center;
+}
+.a{
+	font-size: 150%;
+	color: var(--blue);
+	opacity: .6;
+	text-shadow: 5px 2px 0px var(--greyblue);
+}
+
+.desktop-wrapper{
+	height: 100%;
+	width: 100%;
+}
+
+.desktop-menu{
+	width: 50%;
+	height: 100%;
+}
+.nav-item{
+	font-size: 2vw;
+	width: fit-content;
+	transition: all linear .2s;
+	padding: 10px;
+	border: 2px solid rgba(64,64,102, 0);
+	border-radius: 10px;
+}
+.nav-item:hover{
+	cursor: pointer;
+	color: var(--greyblue);
+	border: 2px solid rgba(64,64,102, 1);
+}
+
+@media only screen and (max-width: 769px) {
+	#mobile-header{
+		display: flex;
+		background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+	border: 2px solid rgba(255, 255, 255, 0);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+	}
+	#desktop-header{
+		display: none;
+	}
+	
+	.webdev{
+		color: var(--greyblue);
+		transform:none;
+		letter-spacing: 5px;
+		width:max-content;
+		font-size: 1.5em;
+	}
+
+	.menu-item{
+	}
+
+}
