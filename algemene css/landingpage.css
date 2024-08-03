@@ -17,6 +17,7 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	width: 100vw;
+	height: 100vh;
 	height: fit-content;
 }
 
@@ -70,6 +71,18 @@ body{
 	border-radius: 15px;
 	opacity: 0;
 }
+.foto-sectie{
+	width:50px;
+}
+
+.whatsapp-text{
+	width: 80%;
+}
+.foto{
+	height: auto;
+	width: 50px;
+	border-radius: 10px;
+}
 
 #whatsapp1{
 	animation: fadein 1s linear;
@@ -104,17 +117,24 @@ body{
 		opacity: 1;
 	}
 }
+.time{
+	display: none;
+}
 @media only screen and (min-width: 1350px) {
 	.about-section{
 		transform: rotate(30deg);
+	}
+	.time{
+		display: none;
 	}
 }
 
 @media only screen and (max-width: 769px) {
 	
 	body{
-		flex-direction: column;
 		justify-content: flex-start;
+		background-image: url('../pictures/mobile version backlground2.jpg');
+		background-size: cover;
 	}
 	.body{
 		display: flex;
@@ -122,12 +142,56 @@ body{
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100vw;
+		height: 100%;
 	}
 
 	.whatsapp-section{
-		width: 100vw;
+		justify-content: start;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	.about-section{
+		background-image: none;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+		color: white;
+		width: 100vw;
+		height: 100%;
+	}
+	.whatsapp{
+		width: 100%;
+	}
+	.whatsappmessages{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		padding: 10px;
+		height: 100%;
+	}
+	.collaborate{
+		width: fit-content;
+	}
+	#worktogether{
+		width: 100%;
+	}
+	.symbols{
+		display: none;
+	}
+
+	.time{
+		display: block;
+	}
+
+	.right-section{
+		width: 100%;
 	}
 }
 
