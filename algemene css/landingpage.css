@@ -130,7 +130,7 @@ body{
 }
 @media only screen and (min-width: 1350px) {
 	.about-section{
-		transform: rotate(30deg);
+		transform: rotate(20deg);
 	}
 	.time{
 		display: none;
@@ -149,6 +149,7 @@ body{
 		justify-content: flex-start;
 		background-image: url('../pictures/mobile version backlground2.jpg');
 		background-size: cover;
+		min-height: 100vh;
 	}
 	.body{
 		display: flex;
@@ -156,7 +157,7 @@ body{
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100vw;
-		height: 100%;
+		height: 100vh;
 	}
 
 	.whatsapp-section{
@@ -201,6 +202,13 @@ body{
 		justify-content: start;
 		align-items: center;
 		margin-top: 10px;
+		font-size: 3em;
+	}
+	.date{
+		display: flex ;
+		justify-content: start;
+		align-items: center;
+		font-size: 1em;
 	}
 
 	.symbols{
