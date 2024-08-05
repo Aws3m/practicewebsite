@@ -129,27 +129,37 @@
     </footer>
 </body>
 <script>
-    $('document').ready(() => {
-        setInterval(() => {
-            const currentDate = new Date(); 
+    const setTime = (hours, minutes)=>{
+        if(minutes.toString().length < 2){
+                minutes = `0${minutes}`;
+        }
+        const time = document.querySelector('.time');
+        const timeStamp = document.querySelectorAll('.currenttime');
+        time.innerHTML = `${hours}:${minutes}`;
+            timeStamp.forEach((stamp) => {
+                stamp.innerHTML = `&nbsp; &#8226; &nbsp;${hours}:${minutes}`;
+            });
+    }
+    const setDate = (dagletters, dagcijfer, maand,)=>{
+        const dayStamp = document.querySelector('.date');
+        const days = ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za'];
+            const maanden = ['Jan','Feb','Maa','Apr','Mei','Jun','Jul','Aug','Sept','Okt','Nov','Dec'];
+            dayStamp.innerHTML = `${days[dagletters]} ${dagcijfer} ${maanden[maand]}`;
+    }
+    const setDateTime = ()=>{
+        const currentDate = new Date(); 
             const hours = currentDate.getHours();
             let minutes = currentDate.getMinutes();
             const dayLetters = currentDate.getDay();
             const dayNumber = currentDate.getDate();
             const month = currentDate.getMonth();
-            if(minutes.toString().length < 2){
-                minutes = `0${minutes}`;
-            }
-            const time = document.querySelector('.time');
-            const timeStamp = document.querySelectorAll('.currenttime');
-            const dayStamp = document.querySelector('.date');
-            time.innerHTML = `${hours}:${minutes}`;
-            timeStamp.forEach((stamp) => {
-                stamp.innerHTML = `&nbsp; &#8226; &nbsp;${hours}:${minutes}`;
-            });
-            const days = ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za'];
-            const maanden = ['Jan','Feb','Maa','Apr','Mei','Jun','Jul','Aug','Sept','Okt','Nov','Dec'];
-            dayStamp.innerHTML = `${days[dayLetters]} ${dayNumber} ${maanden[month]}`;
+            setTime(hours, minutes);
+            setDate(dayLetters, dayNumber, month);
+    }
+    setDateTime();
+    $('document').ready(() => {
+        setInterval(() => {
+            setDateTime();
         }, 1000);
     });
 </script>
