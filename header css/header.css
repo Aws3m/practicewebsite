@@ -27,7 +27,6 @@ top: 18px;
 
 .webdev{
 	color: var(--greyblue);
-	transform: rotate(-90deg);
 	letter-spacing: 5px;
 	font-size: 1.5vw;
 	width: fit-content;
@@ -44,7 +43,7 @@ top: 18px;
 }
 
 .desktop-wrapper{
-	height: 100%;
+	height: 80%;
 	width: 100%;
 }
 
