@@ -26,6 +26,9 @@ top: 18px;
 }
 
 .webdev{
+	background-image: url('../pictures/watercolor-brush-strokes-background.png');
+	background-position: center;
+	background-size: cover;
 	color: var(--greyblue);
 	letter-spacing: 5px;
 	font-size: 1.5vw;
@@ -43,7 +46,7 @@ top: 18px;
 }
 
 .desktop-wrapper{
-	height: 80%;
+	height: 50%;
 	width: 100%;
 }
 
@@ -54,15 +57,17 @@ top: 18px;
 .nav-item{
 	font-size: 2vw;
 	width: fit-content;
-	transition: all linear .2s;
+	transition: all ease smooth .2s;
 	padding: 10px;
 	border: 2px solid rgba(64,64,102, 0);
 	border-radius: 10px;
 }
-.nav-item:hover{
-	cursor: pointer;
-	color: var(--greyblue);
-	border: 2px solid rgba(64,64,102, 1);
+.border-nav{
+	transition: all .2s;
+}
+.border-nav:hover{
+	cursor:pointer;
+	border-bottom-color: var(--blue);
 }
 
 @media only screen and (max-width: 769px) {
