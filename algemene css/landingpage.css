@@ -51,7 +51,6 @@ body{
 	color: white;
 	height: 35rem;
 	width: 255px;
-	
 }
 .whatsappmessages{
 	display: flex;
@@ -64,7 +63,6 @@ body{
 	background: rgb(64,64,102, 0.5);
 	backdrop-filter: blur(var(--blur));
 	-webkit-backdrop-filter: blur(var(--blur));
-	/* border: 1px solid rgb(243, 219, 0); */
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 	width: 85%;
 	padding: 10px;
@@ -115,7 +113,7 @@ body{
 	animation: fadein 1s linear;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
-}
+} 
 
 @keyframes fadein{
 	to {

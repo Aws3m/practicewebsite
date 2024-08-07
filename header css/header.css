@@ -26,10 +26,7 @@ top: 18px;
 }
 
 .webdev{
-	background-image: url('../pictures/watercolor-brush-strokes-background.png');
-	background-position: center;
-	background-size: cover;
-	color: var(--greyblue);
+	color: var(--beige);
 	letter-spacing: 5px;
 	font-size: 1.5vw;
 	width: fit-content;
@@ -38,12 +35,20 @@ top: 18px;
 	text-align: center;
 	align-content: center;
 }
+
+.webdev-desktop{
+	background-image: url('../pictures/pencil-background-3.png');
+	background-position: center;
+	background-size: cover;
+	padding: 10px;
+}
 .a{
 	font-size: 150%;
 	color: var(--blue);
 	opacity: .6;
-	text-shadow: 5px 2px 0px var(--greyblue);
+	text-shadow: 5px 2px 0px black;
 }
+
 
 .desktop-wrapper{
 	height: 50%;
