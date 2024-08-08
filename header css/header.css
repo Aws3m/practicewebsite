@@ -44,7 +44,7 @@ top: 18px;
 }
 .a{
 	font-size: 150%;
-	background-image: linear-gradient(to top rgb(000,000,000) 50%,rgb(255,255,255) 50%);
+	color: var(--greyblue);
 }
 
 
@@ -87,15 +87,17 @@ top: 18px;
 	}
 	
 	.webdev{
-		color: var(--greyblue);
+		
 		transform:none;
 		letter-spacing: 5px;
 		width:max-content;
 		font-size: 1.5em;
 	}
 
-	.logotext{
-
-	}
+	/* .logotext{
+		background: -webkit-linear-gradient(to right rgb(7, 151, 232), rgb(64,64,102));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	} */
 
 }
