@@ -67,7 +67,7 @@ body{
 	width: 85%;
 	padding: 10px;
 	border-radius: 15px;
-	opacity: 0;
+	/* opacity: 0; */
 }
 .foto-sectie{
 	width: 50px;
@@ -82,12 +82,11 @@ body{
 	width: 80%;
 }
 .foto{
-	height: initialpx;
 	width: 50px;
 	border-radius: 10px;
 }
 
-#whatsapp1{
+/* #whatsapp1{
 	animation: fadein 1s linear;
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
@@ -101,7 +100,7 @@ body{
 	animation: fadein 1s linear;
 	animation-delay: 1.5s;
 	animation-fill-mode: forwards;
-}
+} */
 #worktogether{
 	background: rgba(216, 211, 211, 0.3);
 	backdrop-filter: blur(var(--blur));
@@ -109,17 +108,17 @@ body{
 	transition: transform .2s;
 	width: 85%;
 	text-shadow: 2px 2px 8px rgba(0,0,0,1);
-	opacity: 0;
+	/* opacity: 0;
 	animation: fadein 1s linear;
 	animation-delay: 2s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards; */
 } 
 
-@keyframes fadein{
+/* @keyframes fadein{
 	to {
 		opacity: 1;
 	}
-}
+} */
 .time{
 	display: none;
 }

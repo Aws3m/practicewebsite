@@ -1,5 +1,5 @@
 .menu-div{
-	background-color: var(--greyblue);
+	background-color: var(--beige);
 	height: 3px;
 }
 
@@ -28,7 +28,7 @@ top: 18px;
 .webdev{
 	color: var(--beige);
 	letter-spacing: 5px;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 	width: fit-content;
 	text-wrap: nowrap;
 	height: fit-content;
@@ -44,9 +44,7 @@ top: 18px;
 }
 .a{
 	font-size: 150%;
-	color: var(--blue);
-	opacity: .6;
-	text-shadow: 5px 2px 0px black;
+	background-image: linear-gradient(to top rgb(000,000,000) 50%,rgb(255,255,255) 50%);
 }
 
 
@@ -78,7 +76,7 @@ top: 18px;
 @media only screen and (max-width: 769px) {
 	#mobile-header{
 		display: flex;
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.3);
 	backdrop-filter: blur(var(--blur));
 	-webkit-backdrop-filter: blur(var(--blur));
 	border: 2px solid rgba(255, 255, 255, 0);
@@ -97,7 +95,7 @@ top: 18px;
 	}
 
 	.logotext{
-		
+
 	}
 
 }
