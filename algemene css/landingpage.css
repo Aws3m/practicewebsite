@@ -86,21 +86,6 @@ body{
 	border-radius: 10px;
 }
 
-/* #whatsapp1{
-	animation: fadein 1s linear;
-	animation-delay: .5s;
-	animation-fill-mode: forwards;
-}
-#whatsapp2{
-	animation: fadein 1s linear;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-}
-#whatsapp3{
-	animation: fadein 1s linear;
-	animation-delay: 1.5s;
-	animation-fill-mode: forwards;
-} */
 #worktogether{
 	background: rgba(216, 211, 211, 0.3);
 	backdrop-filter: blur(var(--blur));
@@ -108,17 +93,8 @@ body{
 	transition: transform .2s;
 	width: 85%;
 	text-shadow: 2px 2px 8px rgba(0,0,0,1);
-	/* opacity: 0;
-	animation: fadein 1s linear;
-	animation-delay: 2s;
-	animation-fill-mode: forwards; */
 } 
 
-/* @keyframes fadein{
-	to {
-		opacity: 1;
-	}
-} */
 .time{
 	display: none;
 }
@@ -219,6 +195,13 @@ body{
 
 	.right-section{
 		width: 100%;
+	}
+
+	.logotext{
+		background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100%;
 	}
 }
 
