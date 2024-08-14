@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.contactpage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    background-image: url('../pictures/greetings from belgium.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contactform{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    min-width: 780px;
+    width: fit-content;
+    padding: 20px;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 550px;
+    width: 37%;
+    box-sizing: border-box;
+}
+
+.infowrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 90%;
+    padding: 10px;
+}
+#message{
+    resize: none;
+    padding: 10px;
+    border: 2px solid rgb(3, 9, 100);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    width: 90%;
+    height: 100%;
+}
+#message::placeholder{
+  color: black;
+  font-weight: 1000;
+}
+
+.locationandfoto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.address, .phone, .email{
+    font-size: 1em;
+}
+
+.sendbutton{
+    padding: 10px;
+    border: 2px solid var(--blue);
+}
