@@ -196,12 +196,5 @@ body{
 	.right-section{
 		width: 100%;
 	}
-
-	.logotext{
-		background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100%;
-	}
 }
 
