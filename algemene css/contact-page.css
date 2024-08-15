@@ -82,6 +82,7 @@ body{
 .input{
     background: rgba(255, 255, 255, 0);
     border-bottom: 2px solid var(--greyblue);
+    color: var(--greyblue);
 }
 
 .label{
@@ -93,6 +94,14 @@ body{
     border: 2px solid var(--greyblue);
     border-radius: 10px;
     color: var(--greyblue);
+}
+#desktop{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+}
+#mobile{
+    display: none;
 }
 
 @media screen and (max-width: 770px){
@@ -113,5 +122,13 @@ body{
 
     #footnav{
         display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #mobile{
+        display: flex;
+        gap: 10px;
+        font-weight: 600;
     }
 }
