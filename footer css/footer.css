@@ -14,14 +14,32 @@
 	width: fit-content;
 }
 
-.social, .contact-nav{
+.social{
 	color: antiquewhite;
 	transition: .2s;
 }
-#facebook:hover, #instagram:hover, #linkedin:hover, #github:hover, #about:hover, #pricing:hover, #contact:hover, #projects:hover{
+.contact-nav{
+	color: antiquewhite;
+	transition: .2s;
+}
+#facebook:hover, #instagram:hover, #linkedin:hover, #github:hover{
 	padding-bottom: 10px;
 }
 
-
+#home:hover{
+	padding-bottom: 10px;
+}
+#about:hover{
+	padding-bottom: 10px;
+}
+#pricing:hover{
+	padding-bottom: 10px;
+}
+#contact:hover{
+	padding-bottom: 10px;
+}
+#projects:hover{
+	padding-bottom: 10px;
+}
 
 
