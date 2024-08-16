@@ -84,6 +84,9 @@ body{
     border-bottom: 2px solid var(--greyblue);
     color: var(--greyblue);
 }
+.input:focus{
+    border-bottom: 2px solid var(--blue);
+}
 
 .label{
     width: 100px;
@@ -94,6 +97,16 @@ body{
     border: 2px solid var(--greyblue);
     border-radius: 10px;
     color: var(--greyblue);
+    transition: .2s;
+}
+.sendbutton:hover{
+    
+    border-color: var(--blue);
+    
+}
+
+.sendsvg{
+    transition: .2s;
 }
 #desktop{
     display: flex;
