@@ -102,13 +102,13 @@ body{
     transition: .2s;
 }
 .sendbutton:hover{
-    
     border-color: var(--blue);
-    
+    color: var(--blue);
 }
 
 .sendsvg{
     transition: .2s;
+    color: var(--blue);
 }
 #desktop{
     display: flex;
