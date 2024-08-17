@@ -130,20 +130,20 @@
                   (this.scrollHeight) + 'px';
           });
         }
-        function makeLabelRed(errorArray){
-            errorArray.forEach(element => {
+        // function makeLabelRed(errorArray){
+        //     errorArray.forEach(element => {
                 
-            });
-        }
+        //     });
+        // }
         //clicking animation sendbutton
         showError = (errorArray) => {
-            if(errorAray.length !== 0){
+            if(errorArray.length !== 0){
                 Swal.fire({
                 title: 'Vul alle velden in Aub',
                 icon: 'info',
                 confirmButtonText: 'Ok'
                 });
-                makeLabelRed(errorArray);
+                // makeLabelRed(errorArray);
             } else {
                 Swal.fire({
                 title: 'Uw bericht is verstuurd',
