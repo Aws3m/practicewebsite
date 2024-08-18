@@ -86,8 +86,8 @@ body{
     width: 100%;
 }
 .input:focus{
-    border-bottom: 2px solid var(--blue);
-    border-top: none;
+   outline: none;
+   border-bottom: 2px solid var(--blue);
 }
 
 .label{
@@ -101,14 +101,9 @@ body{
     color: var(--greyblue);
     transition: .2s;
 }
-.sendbutton:hover{
-    border-color: var(--blue);
-    color: var(--blue);
-}
 
 .sendsvg{
     transition: .2s;
-    color: var(--blue);
 }
 #desktop{
     display: flex;

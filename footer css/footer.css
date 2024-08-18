@@ -14,16 +14,17 @@
 	width: fit-content;
 }
 
-.social{
+.socials{
 	color: antiquewhite;
 	transition: .2s;
 }
-.contact-nav{
+#footnav{
 	color: antiquewhite;
 	transition: .2s;
 }
 #facebook:hover, #instagram:hover, #linkedin:hover, #github:hover{
 	padding-bottom: 10px;
+	cursor: pointer;
 }
 
 #home:hover{

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" type="text/css" href="./common.css">
     <link rel="stylesheet" type="text/css" href="./algemene css/contact-page.css">
     <link rel="stylesheet" type="text/css" href="./header css/header.css">
@@ -46,7 +47,7 @@
     <div class="contactpage p-2">
         <div class="contactform divide-black divide-x">
             <div class="message flex flex-col gap-3 justify-start items-start">
-                <span class="playwrite-us-modern-400 about-greyblue font-bold">Ask me anything <span style='color: rgb(136, 9, 9);'>*</span>:</span>
+                <span class="playwrite-us-modern-400 about-greyblue font-bold" id="messagelabel">Ask me anything <span style='color: rgb(136, 9, 9);'>*</span>:</span>
                 <textarea name="message" id="message" class="playwrite-us-modern-400"></textarea> 
                 <button class="sendbutton" id="mobile">Send<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" class="about-greyblue sendsvg" fill="currentColor"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></button>
             </div>
@@ -69,16 +70,16 @@
                 </div>
                 <div class="contactme flex flex-col gap-5 w-full">
                     <div class="flex gap-2">
-                        <span class="playwrite-us-modern-400 about-greyblue font-bold label">Naam<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="name" type="text" class="input">
+                        <span class="playwrite-us-modern-400 about-greyblue font-bold label" id="namelabel">Naam<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="name" type="text" class="input">
                     </div>
                     <div class="flex gap-2">
-                        <span class="playwrite-us-modern-400 about-greyblue font-bold label">Voornaam<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="lastname" type="text" class="input">
+                        <span class="playwrite-us-modern-400 about-greyblue font-bold label" id="lastnamelabel">Voornaam<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="lastname" type="text" class="input">
                     </div>
                     <div class="flex gap-2">
-                        <span class="playwrite-us-modern-400 about-greyblue font-bold label">E-mail<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="email" type="email" class="input">
+                        <span class="playwrite-us-modern-400 about-greyblue font-bold label" id="emaillabel">E-mail<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="email" type="email" class="input">
                     </div>
                     <div class="flex gap-2">
-                        <span class="playwrite-us-modern-400 about-greyblue font-bold label">Telefoon<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="phone" type="number" class="input">
+                        <span class="playwrite-us-modern-400 about-greyblue font-bold label" id="phonelabel">Telefoon<span style="color: rgb(136, 9, 9);">*</span>:</span><input id="phone" type="number" class="input">
                     </div>
                 </div>
                 <button class="sendbutton" id="desktop">Send<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" class="about-greyblue sendsvg" fill="currentColor"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></button>
@@ -94,7 +95,7 @@
             <a href="./about.html" class="contact-nav" id="about">
                 <p  class="font-bold playwrite-us-modern-400">About</p>
             </a>
-            <a href="./projects.html" class="contact-nav"id="projects" >
+            <a href="./projects.html" class="contact-nav" id="projects" >
                 <p  class=" font-bold playwrite-us-modern-400">Projects</p>
             </a>
             <a href="./pricing.html" class="contact-nav" id="pricing">
@@ -127,55 +128,60 @@
               this.style.height = 'auto';
    
               this.style.height =
-                  (this.scrollHeight) + 'px';
-          });
+              (this.scrollHeight) + 'px';
+            });
         }
-        // function makeLabelRed(errorArray){
-        //     errorArray.forEach(element => {
-                
-        //     });
-        // }
-        //clicking animation sendbutton
+        let errorArray = [];
+        function makeLabelRed(label){
+            $(`#${label}`).css('color', 'rgb(136, 9, 9)');
+            
+        }
+        function makeLabelBlack(label){
+            $(`#${label}`).css('color', 'rgb(0, 0, 0)');
+            
+        }
+        // clicking animation sendbutton
         showError = (errorArray) => {
             if(errorArray.length !== 0){
                 Swal.fire({
-                title: 'Vul alle velden in Aub',
+                title: '<p style="color: white;">' + 'Vul alle velden in Aub' + '<p>',
                 icon: 'info',
                 confirmButtonText: 'Ok'
                 });
-                // makeLabelRed(errorArray);
+                
             } else {
                 Swal.fire({
                 title: 'Uw bericht is verstuurd',
+                text: 'ik neem zo spoeding mogelijk contact met u op',
                 icon: 'success',
                 confirmButtonText: 'Ok'
                 });
             }
         }
+
+        handleError = (value, label) => {
+            if(!value){
+                errorArray.push(label);
+                makeLabelRed(label);
+            } else {
+                makeLabelBlack(label);
+            }
+        }
         $('.sendbutton').on('click', () => {
-            let errorArray = [];
             const message = $('#message').val();
             const name = $('#name').val();
             const email = $('#email').val();
             const lastname = $('#lastname').val();
             const phone = $('#phone').val();
-            if(!message){
-                errorArray.push("message");
-            }
-            if(!name){
-                errorArray.push("name");
-            }
-            if(!email){
-                errorArray.push("email");
-            }
-            if(!lastname){
-                errorArray.push("lastname");
-            }
-            if(!phone){
-                errorArray.push("phone");
-            }
-            
+            handleError(message, "messagelabel");
+            handleError(name, "namelabel");
+            handleError(email, "emaillabel");
+            handleError(lastname, "lastnamelabel");
+            handleError(phone, "phonelabel");
             showError(errorArray);
+            errorArray.splice(0, errorArray.length);
+            
+            
         }
     );
 
