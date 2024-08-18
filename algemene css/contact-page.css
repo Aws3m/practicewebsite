@@ -58,9 +58,9 @@ body{
     width: 100%;
     height: 100%;
 }
-#message::placeholder{
-  color: var(--greyblue);
-  font-weight: 1000;
+#message:focus{
+    outline: none;
+    border: 2px solid var(--blue);
 }
 
 .locationandfoto{
