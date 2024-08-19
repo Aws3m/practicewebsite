@@ -99,7 +99,7 @@ body{
     border: 2px solid var(--greyblue);
     border-radius: 10px;
     color: var(--greyblue);
-    transition: .2s;
+    transition: .1s;
 }
 
 .sendsvg{

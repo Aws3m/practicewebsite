@@ -168,6 +168,8 @@
             }
         }
         $('.sendbutton').on('click', () => {
+            $('.sendbutton').css('transform', 'scale(.9)');
+            setTimeout(() => {$('.sendbutton').css('transform', 'scale(1)')}, 100);
             const message = $('#message').val();
             const name = $('#name').val();
             const email = $('#email').val();
