@@ -14,23 +14,15 @@
 	width: fit-content;
 }
 
-#facebook, #instagram, #linkedin, #github{
+#facebook, #instagram, #linkedin, #github, #home, #about, #pricing, #pricing, #contact, #projects{
 	color: antiquewhite;
 	transition: .2s;
 	cursor: pointer;
 }
-#facebook:hover, #instagram:hover, #linkedin:hover, #github:hover{
-	padding-bottom: 10px;
+#facebook:hover, #instagram:hover, #linkedin:hover, #github:hover, #home:hover, #about:hover, #pricing:hover, #pricing:hover, #contact:hover, #projects:hover{
+	transform: scale(1.1);
 }
 
-#home, #about, #pricing, #pricing, #contact, #projects{
-	color: antiquewhite;
-	transition: .2s;
-	cursor: pointer;
-}
-#home:hover, #about:hover, #pricing:hover, #pricing:hover, #contact:hover, #projects:hover{
-	padding-bottom: 10px;
-}
 
 
 

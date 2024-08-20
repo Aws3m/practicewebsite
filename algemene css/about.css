@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../pictures/message in a bottle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
