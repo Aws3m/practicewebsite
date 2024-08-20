@@ -22,7 +22,13 @@
 #facebook:hover, #instagram:hover, #linkedin:hover, #github:hover, #home:hover, #about:hover, #pricing:hover, #pricing:hover, #contact:hover, #projects:hover{
 	transform: scale(1.1);
 }
+@media screen and (max-width: 770px){
 
+    #footnav{
+        display: none;
+    }
+
+}
 
 
 
