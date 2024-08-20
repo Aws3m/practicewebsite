@@ -92,6 +92,7 @@ body{
 
 .label{
     width: 150px;
+    word-wrap: break-word
 }
 .sendbutton{
     width: fit-content;
