@@ -2,7 +2,9 @@
 	background-color: var(--greyblue);
 	height: 3px;
 }
-
+.hidden-menu{
+	display: none;
+}
 .mobile-menu{
 	/* From https://css.glass */
 background: rgba(255, 255, 255, 0.5);
@@ -85,7 +87,9 @@ top: 18px;
 	#desktop-header{
 		display: none;
 	}
-	
+	.hidden-menu{
+		display: block;
+	}
 	.webdev{
 		
 		transform:none;

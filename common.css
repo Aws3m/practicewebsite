@@ -60,3 +60,9 @@ a{
 div:where(.swal2-container) .swal2-html-container {
     color: white;
   }
+
+  @media screen and (max-width: 770px){
+    .slidetoggle{
+		display: none;
+	}
+}
