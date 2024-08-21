@@ -92,7 +92,7 @@ body{
 
 .label{
     width: 160px;
-    text-wrap: no-wrap;
+    text-wrap: nowrap;
 }
 .sendbutton{
     width: fit-content;
@@ -154,5 +154,9 @@ body{
     }
     #verplichtveldmobile{
         display: block;
+    }
+
+    .formfields{
+        flex-direction: column;
     }
 }

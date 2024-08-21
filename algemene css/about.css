@@ -4,8 +4,55 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../pictures/message in a bottle.jpg');
+    background-image: url('../pictures/wp11543666-black-end-wallpapers.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.aboutpage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.about-main{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width:100%;
+}
+.profile{
+    width: 20%;
+    
+}
+
+#picture{
+    width: 100px;
+    height: auto;
+    border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
+}
+.infosection{
+    width: 80%;
+}
+.skills{
+}
+.skill{
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+    border-radius: 5px;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    border-radius: 50%;
+    padding: 20px;
+    transition: .2s ease-in-out
+
+}
+.skill:hover{
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
