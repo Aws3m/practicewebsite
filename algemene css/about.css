@@ -4,8 +4,8 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../pictures/project.jpg');
-    background-position: center;
+    background-image: url('../pictures/about me neon.jpg');
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,17 +19,16 @@ body{
 
 .about-main{
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width:100%;
 }
 .profile{
     width: 400px;
-    
+    flex-direction: column;
 }
 
 #picture{
@@ -40,7 +39,11 @@ body{
 .infosection{
     width: 80%;
 }
-
+.skills{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 .skill{
     background: linear-gradient(120deg, rgba(42, 146, 21, 0.3), rgba(11, 13, 124, 0.5));
     border-radius: 5px;
@@ -60,12 +63,20 @@ body{
 
 .skillname{
     position:absolute;
-    bottom: 0;
+    bottom: 5px;
     text-wrap: nowrap;
     letter-spacing: normal;
     color: antiquewhite;
+    font-size: .8em;
+}
+.skillimage{
+    width: 40px;
+    height: 40px;
 }
 
+.myjourney{
+    line-height: 30px;
+}
 @media screen and (max-width: 770px){
 
     #footnav{
@@ -76,13 +87,33 @@ body{
     }
     .image{
         flex-direction: column;
+        border-right: 1px solid antiquewhite
     }
     .profile{
         flex-direction: row;
         width: 100%;
     }
     .skills{
-            align-items: center;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .skill{
+        height: 70px;
+        width: 70px;
+    }
+
+    .skillname{
+        bottom: 2px;
+        font-size: .6em;
+    }
+    .skillimage{
+        width: 30px;
+        height: 30px;
+    }
+    .myjourney{
+        width: 100%;
     }
 }
 @media screen and (max-width: 426px){
@@ -95,13 +126,19 @@ body{
     }
     .image{
         flex-direction: row;
+        justify-content: center;
         width: 100%;
+        border-right: none;
     }
     .profile{
         flex-direction: column;
         width: 100%;
     }
     .skills{
-            align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .myjourney{
+        width: 100%;
     }
 }
