@@ -26,7 +26,7 @@ body{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width:100%;
-    gap: 10px;
+    gap: 50px;
     align-items: center;
 }
 .image{
@@ -37,7 +37,7 @@ body{
 }
 
 #picture{
-    width: 200px;
+    width: 400px;
     height: auto;
     border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
 }
@@ -50,8 +50,6 @@ body{
     width: fit-content;
 }
 .skill{
-    background: linear-gradient(120deg, rgba(42, 146, 21, 0.3), rgba(11, 13, 124, 0.5));
-    border-radius: 5px;
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
     border-radius: 50%;
@@ -71,12 +69,36 @@ body{
     bottom: 5px;
     text-wrap: nowrap;
     letter-spacing: normal;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-size: .8em;
 }
 .skillimage{
     width: 40px;
     height: 40px;
+}
+#html{
+background: rgba(230, 136, 5, .3);
+}
+#css{
+background: rgba(45, 83, 229, .3);
+}
+#TS{
+background: rgba(49, 120, 198, .3);
+}
+#JS{
+background: rgba(255, 218, 62, .3);
+}
+#vue{
+background: rgba(63, 185, 132, .3);
+}
+#bootstrap{
+background: rgba(99, 13, 202, .3);
+}
+#tailwind{
+background: rgba(56, 189, 248, .3);
+}
+#jquery{
+background: rgba(25, 53, 86, .3);
 }
 
 .myjourney{
@@ -86,18 +108,55 @@ body{
     gap: 50px;
 }
 .journeytitle{
-    font-size: 5em;
+    font-size: 3em;
+    text-shadow: 0 2px 5px;
 }
 .timelineitem{
-    background: linear-gradient(120deg, rgba(42, 146, 21, 0.3), rgba(11, 13, 124, 0.5));
+    background: linear-gradient(120deg, rgba(75, 85, 73, 0.5), rgba(46, 38, 38, 0.5));
     border-radius: 5px;
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
+    transition: .2s ease;
+}
+.timelineitem:hover{
+    transform: scale(1.1);
 }
 
 .timeline-explanation{
     color: antiquewhite;
 }
+
+.values-image{
+ width: 50%;
+ height: auto;
+}
+
+.values-layout, .mobilefirst-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.values-explanation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.values-title{
+    font-size: 2em;
+}
+
+.values-paragraph{
+    font-size: 1.5em;
+}
+
+.divider{
+    width: 50%;
+    border-bottom: 2px solid var(--greyblue);
+}
+
 @media screen and (max-width: 770px){
 
     #footnav{
@@ -107,13 +166,17 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+    #picture{
+        width: 300px;
+        height: auto;
+        border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
+    }
     .profile{
-        flex-direction: row;
         width: 100%;
+        justify-content: center;
     }
     .skills{
         align-items: center;
-        justify-content: start;
         width: 100%;
     }
 
@@ -130,6 +193,9 @@ body{
         width: 30px;
         height: 30px;
     }
+    .skill{
+        pointer-events: none;
+    }
     .infosection{
         border: none;
     }
@@ -137,7 +203,26 @@ body{
         width: 100%;
     }
     .journeytitle{
-        font-size: 4em;
+        font-size: 2em;
+    }
+    .timelineitem{
+        pointer-events: none;
+    }
+    .values-layout{
+        flex-direction: column;
+    }
+    .values-layout{
+        align-items: center;
+    }
+    .mobilefirst-layout{
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+    .values-title{
+        font-size: 1.5em;
+    }
+    .values-paragraph{
+        font-size: 1.2em;
     }
 }
 @media screen and (max-width: 426px){
@@ -151,6 +236,11 @@ body{
         width: 100%;
         border-right: none;
     }
+    #picture{
+        width: 200px;
+        height: auto;
+        border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
+    }
     .profile{
         flex-direction: column;
         width: 100%;
@@ -159,10 +249,19 @@ body{
         align-items: center;
         justify-content: center;
     }
+    .skill{
+        pointer-events: none;
+    }
     .myjourney{
         width: 100%;
     }
     .journeytitle{
         font-size: 2em;
+    }
+    .responsive-title{
+        font-size: 1em;
+    }
+    .timelineitem{
+        pointer-events: none;
     }
 }

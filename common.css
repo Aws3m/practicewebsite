@@ -51,6 +51,10 @@ a{
 	color: var(--beige);
 }
 
+.antiquewhite{
+    color: antiquewhite;
+}
+
 .swal2-modal {
     background-color: rgb(64,64,102, 0.9);
   }
