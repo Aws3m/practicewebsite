@@ -25,6 +25,8 @@ body{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width:100%;
+    gap: 10px;
+    align-items: center;
 }
 .image{
     width: fit-content;
@@ -76,7 +78,10 @@ body{
 }
 
 .myjourney{
-    line-height: 30px;
+    background: linear-gradient(120deg, rgba(42, 146, 21, 0.3), rgba(11, 13, 124, 0.5));
+    border-radius: 5px;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
 }
 @media screen and (max-width: 770px){
 
