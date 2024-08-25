@@ -44,6 +44,13 @@ body{
 .infosection{
     width: 100%;
 }
+.asl{
+    font-size: 2em;
+}
+.shortinfo{
+    border-left: 5px solid var(--greyblue);
+    
+}
 .skills{
     align-items: center;
     justify-content: center;
@@ -99,6 +106,9 @@ background: rgba(56, 189, 248, .3);
 }
 #jquery{
 background: rgba(25, 53, 86, .3);
+}
+#wordpress{
+background: rgba(0,0,0, .3);
 }
 
 .myjourney{
@@ -156,20 +166,24 @@ background: rgba(25, 53, 86, .3);
     width: 50%;
     border-bottom: 2px solid var(--greyblue);
 }
-
+.round-ball{
+    background: var(--greyblue);
+}
 @media screen and (max-width: 770px){
 
     #footnav{
         display: none;
     }
     .image{
-        flex-direction: column;
         justify-content: center;
     }
     #picture{
         width: 300px;
         height: auto;
         border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
+    }
+    .asl{
+        font-size: 1.5em;
     }
     .profile{
         width: 100%;
@@ -240,6 +254,9 @@ background: rgba(25, 53, 86, .3);
         width: 200px;
         height: auto;
         border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
+    }
+    .asl{
+        font-size: 1em;
     }
     .profile{
         flex-direction: column;
