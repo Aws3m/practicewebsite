@@ -168,10 +168,10 @@
     <script>
         $('document').ready(() => {
             for(let i = 1; i < 5 ;i++){
-                $(`#up${i}`).click(() => {
+                $(`#up${i}`).on("click",() => {
                     $(`#infowrapper${i}`).show(500);
                 });
-                $(`#down${i}`).click(() => {
+                $(`#down${i}`).on("click", () => {
                     $(`#infowrapper${i}`).hide(500);
                 });
             }
