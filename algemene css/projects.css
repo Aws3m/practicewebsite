@@ -70,3 +70,17 @@ height: 150px;
     background-color: antiquewhite;
     color:var(--greyblue)
 }
+
+@media screen and (max-width: 770px){
+    .project{
+        height: 300px;
+        width: 100%;
+    }
+    .projectinfo{
+        height: fit-content;
+    }
+    .title{
+        font-size: 2em;
+        text-shadow: 0 2px 5px;
+    }
+}
