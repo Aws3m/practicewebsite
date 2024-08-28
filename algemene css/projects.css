@@ -113,7 +113,7 @@ height: 100%;
         font-size: 1.5em;
     }
     .arrowup{
-        transform: rotate(90deg);
+        pointer-events: none
         background: rgba(44, 35, 78, 0.5);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
@@ -121,8 +121,5 @@ height: 100%;
         border-radius: 50%;
         width: 20px;
         height: 20px;
-    }
-    .arrowup{
-        pointer-events: none;
     }
 }
