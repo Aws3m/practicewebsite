@@ -4,13 +4,23 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../pictures/big city.jpg');
+}
+.projectpageheader{
+    background-image: url('../pictures/blue latptop.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: hue-rotate(30deg);
+    height: 400px;
 }
-
+.headertext{
+    background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
 .projectspage{
+    background-color: rgb(44, 35, 78);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,17 +39,16 @@ body{
 }
 
 .project{
-    
     height: 400px;
     width: 600px;
 }
 .projectinfo{
 /* From https://css.glass */
-background: rgba(255, 255, 255, 0.3);
+background: rgba(44, 35, 78, 0.5);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-height: 150px;
+height: 100%;
 }
 .projectimage{
     width: 100%;
@@ -47,10 +56,9 @@ height: 150px;
 }
 .title{
     font-size: 3em;
-    text-shadow: 0 2px 5px;
 }
 .projecttitle{
-    font-size: 1em;
+    font-size: 1.2em;
     /* text-shadow: 0 2px 5px; */
 }
 
@@ -70,17 +78,51 @@ height: 150px;
     background-color: antiquewhite;
     color:var(--greyblue)
 }
+.arrowup{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.arrowup:hover{
+    background: rgba(255, 255, 255, 0.747);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.up{
+    transform: scale(.5);
+}
+
 
 @media screen and (max-width: 770px){
     .project{
         height: 300px;
         width: 100%;
     }
-    .projectinfo{
-        height: fit-content;
-    }
     .title{
         font-size: 2em;
         text-shadow: 0 2px 5px;
+    }
+    .headertext{
+        font-size: 1.5em;
+    }
+    .arrowup{
+        transform: rotate(90deg);
+        background: rgba(44, 35, 78, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    .arrowup{
+        pointer-events: none;
     }
 }
