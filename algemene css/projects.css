@@ -20,7 +20,6 @@ body{
     font-size: 3em;
 }
 .projectspage{
-    background-color: rgb(44, 35, 78);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,8 +38,11 @@ body{
 }
 
 .project{
-    height: 400px;
+    height: fit-content;
     width: 600px;
+}
+.project:hover{
+    outline: 2px solid var(--greyblue);
 }
 .projectinfo{
 /* From https://css.glass */
@@ -48,11 +50,11 @@ background: rgba(44, 35, 78, 0.5);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-height: 100%;
+height: 20%;
 }
 .projectimage{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .title{
     font-size: 3em;
