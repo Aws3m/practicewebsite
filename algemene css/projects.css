@@ -41,9 +41,7 @@ body{
     height: fit-content;
     width: 600px;
 }
-.project:hover{
-    outline: 2px solid var(--greyblue);
-}
+
 .projectinfo{
 /* From https://css.glass */
 background: rgba(44, 35, 78, 0.5);
@@ -64,7 +62,21 @@ height: 20%;
     /* text-shadow: 0 2px 5px; */
 }
 
+.linkbutton{
+    border: 2px solid antiquewhite;
+    transition: .2s
+}
+.linkbutton:hover{
+    background-color: antiquewhite;
+    color: var(--greyblue);
+}
 
+
+@media screen and (max-width: 1024px){
+    .headertext{
+        font-size: 2em;
+    }
+}
 @media screen and (max-width: 770px){
     .project{
         width: 100%;
@@ -74,6 +86,9 @@ height: 20%;
         text-shadow: 0 2px 5px;
     }
     .headertext{
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+    .linkbutton{
+        font-size: .4em;
     }
 }
