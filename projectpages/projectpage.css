@@ -22,12 +22,18 @@ body{
     gap: 50px;
 }
 .projectpageheader{
-    background-image: url('../pictures/blue latptop.jpg');
-    background-position: center;
+    background-image: url('../pictures/projectsheader2.jpg');
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: hue-rotate(30deg);
     height: 400px;
+}
+.glassbackground{
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+width: 100%;
 }
 .headertext{
     background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));

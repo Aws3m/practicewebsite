@@ -6,12 +6,18 @@ body{
     min-height: 100vh;
 }
 .projectpageheader{
-    background-image: url('../pictures/blue latptop.jpg');
-    background-position: center;
+    background-image: url('../pictures/projectsheader2.jpg');
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: hue-rotate(30deg);
     height: 400px;
+}
+.glassbackground{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
 }
 .headertext{
     background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
@@ -63,7 +69,7 @@ height: 20%;
 }
 
 .linkbutton{
-    border: 2px solid antiquewhite;
+    border: 1px solid antiquewhite;
     transition: .2s
 }
 .linkbutton:hover{
@@ -84,6 +90,9 @@ height: 20%;
     .title{
         font-size: 2em;
         text-shadow: 0 2px 5px;
+    }
+    .projectpageheader{
+        height: 200px;
     }
     .headertext{
         font-size: 1.2em;
