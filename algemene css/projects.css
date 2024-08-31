@@ -89,6 +89,7 @@ height: 20%;
         font-size: 1.2em;
     }
     .linkbutton{
-        font-size: .4em;
+        font-size: .4em;    
+        pointer-events: none;
     }
 }

@@ -8,7 +8,7 @@ body{
     background-position: center;
     background-repeat: repeat;
     background-size: contain; */
-    background-color: var(--beige);
+    background-color:antiquewhite;
 }
 
 .projectpage{
@@ -20,6 +20,20 @@ body{
     align-items: center;
     flex-grow: 1;
     gap: 50px;
+}
+.projectpageheader{
+    background-image: url('../pictures/blue latptop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(30deg);
+    height: 400px;
+}
+.headertext{
+    background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
 }
 .picture{
     /* background: rgba(255, 255, 255, 0.3);
@@ -34,7 +48,7 @@ body{
     width:70%
 }
 .title{
-    font-size: 1em;
+    font-size: 2em;
     color: var(--greyblue);
     text-shadow: 0 2px 5px;
 }
@@ -56,5 +70,10 @@ body{
 
     .back{
         display: none;
+    }
+    .title{
+        font-size: 1em;
+        color: var(--greyblue);
+        text-shadow: 0 2px 5px;
     }
 }
