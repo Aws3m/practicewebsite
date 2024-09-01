@@ -6,14 +6,14 @@ body{
     min-height: 100vh;
 }
 .projectpageheader{
-    background-image: url('../pictures/projectsheader2.jpg');
+    background-image: url('../pictures/projectsheader2-min.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
 }
 .glassbackground{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -99,6 +99,5 @@ height: 20%;
     }
     .linkbutton{
         font-size: .4em;    
-        pointer-events: none;
     }
 }
