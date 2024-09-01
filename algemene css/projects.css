@@ -4,7 +4,6 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    gap: 30px
 }
 .projectpageheader{
     background-image: url('../pictures/projectsheader2-min.jpg');
@@ -44,6 +43,7 @@ body{
 .title{
     font-size: 3em;
     text-shadow: 0 2px 5px;
+
 }
 
 .project{
@@ -67,23 +67,53 @@ height: 20%;
     font-size: 3em;
     height: 90px;
 }
-
-#localprojects{
-    border-bottom: 2px solid var(--greyblue);
-    border-top: 2px solid var(--greyblue);
-    transition: .2s;
+#websitessection{
+    display: none;
 }
-#localprojects:hover{
+.localprojects{
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .1s linear;
+}
+.localprojects:hover{
+    border-right: 2px solid var(--greyblue);
+    border-top: 2px solid var(--greyblue);
+    border-left: 2px solid var(--greyblue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     cursor:pointer;
 }
-#websites{
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
-    transition: .2s;
-}
-#websites:hover{
-    border-bottom: 2px solid var(--greyblue);
+.localprojectsactive{
+    border-right: 2px solid var(--greyblue);
     border-top: 2px solid var(--greyblue);
+    border-left: 2px solid var(--greyblue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor:pointer;
+}
+.websites{
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: .1s linear;
+}
+.websites:hover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right: 2px solid var(--greyblue);
+    border-top: 2px solid var(--greyblue);
+    border-left: 2px solid var(--greyblue);
+    cursor:pointer;
+}
+.websitesactive{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right: 2px solid var(--greyblue);
+    border-top: 2px solid var(--greyblue);
+    border-left: 2px solid var(--greyblue);
     cursor:pointer;
 }
 
@@ -114,6 +144,7 @@ height: 20%;
     .title{
         font-size: 1.2em;
         text-shadow: 0 2px 5px;
+        height: fit-content;
     }
     .projectpageheader{
         height: 200px;

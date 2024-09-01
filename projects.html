@@ -50,8 +50,8 @@
     </div>
     <div class="projectspage p-3">
         <div class="flex gap-10">
-            <h1 class="font-bold playwrite-us-modern-400 w-fit about-greyblue title" id="localprojects">Local Projects</h1>
-            <h1 class="font-bold about-greyblue playwrite-us-modern-400 w-fit title" id="websites">Websites</h1>
+            <h1 class="font-bold playwrite-us-modern-400 w-fit about-greyblue p-3 title hobbybutton localprojectsactive" id="hobby">Hobby Projects</h1>
+            <h1 class="font-bold about-greyblue playwrite-us-modern-400 w-fit p-3 title websitesbutton websites" id="websites">Websites</h1>
         </div>
         <div class="projects-main flex flex-wrap">
             <div class="wrapper" id="localprojectssection">
@@ -88,7 +88,7 @@
             </div>
             <div class="wrapper" id="websitessection">
                 <div class="projectdiv flex flex-wrap gap-10 justify-center p-3" >
-                    
+                    <p class="">Nog geen website om te tonen</p>
                 </div>
             </div>
         </div>
@@ -126,6 +126,24 @@
         </div>
     </footer>
     <script>
+        $('document').ready(() => {
+            $('.hobbybutton').on('click', () => {
+                $('#localprojectssection').fadeIn();
+                $('#websitessection').hide();
+                $('#hobby').removeClass("localprojects");
+                $('#hobby').addClass("localprojectsactive");
+                $('#websites').removeClass("websitesactive");
+                $('#websites').addClass("websites");
+            });
+            $('.websitesbutton').on('click', () => {
+                $('#localprojectssection').hide();
+                $('#websitessection').fadeIn();
+                $('#hobby').removeClass("localprojectsactive");
+                $('#hobby').addClass("localprojects");
+                $('#websites').removeClass("websites");
+                $('#websites').addClass("websitesactive");
+            });
+        });
     </script>
 </body>
 </html>
