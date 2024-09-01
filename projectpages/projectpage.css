@@ -4,11 +4,7 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    /* background-image: url('../pictures/project.jpg');
-    background-position: center;
-    background-repeat: repeat;
-    background-size: contain; */
-    background-color:antiquewhite;
+    background-color: azure;
 }
 
 .projectpage{
