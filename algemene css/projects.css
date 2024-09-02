@@ -28,16 +28,17 @@ body{
     height: fit-content;
 }
 .projectspage{
+    
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     flex-grow: 1;
 }
 
 .projects-main{
     width:100%;
+    background: rgba(161, 148, 148, 0.5);
 }
 
 .title{
@@ -47,6 +48,7 @@ body{
 }
 
 .project{
+    
     height: fit-content;
     width: 600px;
 }
@@ -64,56 +66,48 @@ height: 20%;
     height: auto;
 }
 .title{
-    font-size: 3em;
-    height: 90px;
+    font-size: 2em;
+    height: 80px;
 }
 #websitessection{
     display: none;
 }
 .localprojects{
-    border-right: 2px solid transparent;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transition: .1s linear;
 }
 .localprojects:hover{
-    border-right: 2px solid var(--greyblue);
-    border-top: 2px solid var(--greyblue);
-    border-left: 2px solid var(--greyblue);
+    background: rgba(161, 148, 148, 0.2);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     cursor:pointer;
 }
 .localprojectsactive{
-    border-right: 2px solid var(--greyblue);
-    border-top: 2px solid var(--greyblue);
-    border-left: 2px solid var(--greyblue);
+    background: rgba(161, 148, 148, 0.5);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     cursor:pointer;
 }
 .websites{
-    border-right: 2px solid transparent;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     transition: .1s linear;
 }
 .websites:hover{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-right: 2px solid var(--greyblue);
-    border-top: 2px solid var(--greyblue);
-    border-left: 2px solid var(--greyblue);
+    background: rgba(161, 148, 148, 0.2);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
     cursor:pointer;
 }
 .websitesactive{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-right: 2px solid var(--greyblue);
-    border-top: 2px solid var(--greyblue);
-    border-left: 2px solid var(--greyblue);
+    background: rgba(161, 148, 148, 0.5);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
     cursor:pointer;
 }
 
