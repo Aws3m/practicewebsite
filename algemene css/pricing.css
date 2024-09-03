@@ -50,5 +50,35 @@ body{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width: 300px;
-    height: 400px;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.pricingtitle{
+    text-wrap: nowrap;
+    font-size: 1.5em;
+}
+.pricingexpl{
+    text-wrap: nowrap;
+    font-size: .9em;
+}
+.pricingtag{
+    text-wrap: nowrap;
+    font-size: 2em;
+}
+
+.voorwaarden{
+    font-size: .6em;
+}
+#wordpressoption{
+    background: linear-gradient(120deg,#ffffff,#d4dfed);
+}
+#stylingframeworkoption{
+    background: linear-gradient(120deg, #ffffff, #d4dfed);
+}
+#customoption{
+    background: linear-gradient(120deg, #ffffff, #d4dfed);
 }

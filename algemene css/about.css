@@ -54,7 +54,6 @@ body{
 .skills{
     align-items: center;
     justify-content: center;
-    width: fit-content;
 }
 .skill{
     backdrop-filter: blur(var(--blur));
@@ -192,7 +191,6 @@ background: rgba(0,0,0, .3);
     }
     .skills{
         align-items: center;
-        width: 70%;
     }
 
     .skill{
