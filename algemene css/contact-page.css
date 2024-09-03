@@ -4,17 +4,16 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../pictures/message in a bottle.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .contactpage{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    
+    background-image: url('../pictures/message in a bottle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .contactform{

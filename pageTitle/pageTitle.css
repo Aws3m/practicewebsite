@@ -1,15 +1,4 @@
-body{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('../');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.projectpageheader{
+.pageheader{
     background-image: url('../pictures/projectsheader2-min.jpg');
     background-position: top;
     background-repeat: no-repeat;
@@ -31,21 +20,17 @@ body{
     font-size: 3em;
     height: fit-content;
 }
-.pricingpage{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-.pricing-main{
-    /* From https://css.glass */
-    width:100%;
-}
-
 
 @media screen and (max-width: 1024px){
+    .headertext{
+        font-size: 2em;
+    }
 }
 @media screen and (max-width: 770px){
-
+    .pageheader{
+        height: 200px;
+    }
+    .headertext{
+        font-size: 1.2em;
+    }
 }
