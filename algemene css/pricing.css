@@ -56,10 +56,23 @@ th{
 td{
     padding: 10px;
 }
-
+.title{
+    font-size: 2em;
+}
+.subtitle{
+    font-size: .8em;
+}
 .dashedborder{
     border-bottom: 1px dashed;
 }
+.stepstowork{
+    width: 70%
+}
+.divider{
+    width: 50%;
+    border-bottom: 2px solid var(--greyblue);
+}
+
 @media screen and (max-width: 1024px){
 }
 @media screen and (max-width: 770px){
@@ -69,5 +82,8 @@ td{
         padding: 10px;
         text-align: center;
         background-color: azure;
+    }
+    .stepstowork{
+        width: 100%;
     }
 }
