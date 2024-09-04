@@ -43,9 +43,31 @@ body{
     width:100%;
 }
 
+table{
+    width: 70%;
+    height: fit-content;
+    
+    text-align: center;
+    background-color: var(--beige);
+}
+th{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
 
+.dashedborder{
+    border-bottom: 1px dashed;
+}
 @media screen and (max-width: 1024px){
 }
 @media screen and (max-width: 770px){
-
+    table{
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        text-align: center;
+        background-color: azure;
+    }
 }
