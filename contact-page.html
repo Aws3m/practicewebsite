@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="./footer css/footer.css">
     <script defer src="./scripts/mobile-menu.js"></script>
     <script defer src="./scripts/getCurrentYearForCopyright.js"></script>
-    <script defer src="./scripts/dynamicsScripts.js"></script>
 </head>
 <header class="justify-between items-center p-3 h-20 w-full" id="mobile-header">
     <div class="flex gap-2 items-center"><img src="./pictures/logo webdisegn.png" alt="logo" width="80" height="80"><span class="logotext playwrite-us-modern-400 font-bold pb-1 self-end">Awsem webdesign</span></div>
@@ -52,6 +51,13 @@
         </div>
     </div>
     <div class="contactpage p-2">
+        <div class="appointment flex flex-col items-center gap-10 p-3">
+            <h1 class="font-bold about-greyblue playwrite-us-modern-400 w-fit title text-center">Schedule an appointment here</h1>
+            <button class="p-3 about-greyblue playwrite-us-modern-400 appointmentbutton w-fit rounded">Book appointment</button>
+        </div>
+        <div class="divider"></div>
+        <div ><h1 class="font-bold about-greyblue playwrite-us-modern-400 w-fit title text-center">OR</h1></div>
+        <div class="divider"></div>
         <form class="contactform divide-black divide-x">
             <div class="message flex flex-col gap-3 justify-start items-start">
                 <span class="playwrite-us-modern-400 about-greyblue font-bold" id="messagelabel">Ask me anything*:</span>
@@ -91,7 +97,7 @@
                 </div>
                 <div class="flex gap-5">
                     <div class="flex gap-1 hover:cursor-pointer">
-                        <input id="wordpressradio" type="radio" value="wordpress" class="hover:cursor-pointer" name="choice">
+                        <input id="wordpressradio" type="radio" value="wordpress" class="hover:cursor-pointer" name="choice" checked>
                         <label class="playwrite-us-modern-400 about-greyblue font-bold hover:cursor-pointer" for="wordpressradio">Wordpress website</label>
                     </div>
                     <div class="flex gap-1 hover:cursor-pointer">
@@ -210,8 +216,16 @@
             errorArray.splice(0, errorArray.length);
             
             
-        }
-    );
+        });
+        $('.appointmentbutton').on('click', () => {
+            Swal.fire({
+                title: '<p style="color: white;">' + 'calendly link wil be added afterwards' + '<p>',
+                icon: 'info',
+                confirmButtonText: 'Ok'
+                });
+        });
+
+    
 
     </script>
 </body>
