@@ -7,27 +7,29 @@ body{
 }
 
 .projectspage{
-    
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
 }
-
+.projectwrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .projects-main{
     width:100%;
-    background: rgba(161, 148, 148, 0.5);
+    min-height: 100vh;
 }
 
 .title{
     font-size: 3em;
-    text-shadow: 0 2px 5px;
-
+    /* text-shadow: 0 2px 5px; */
 }
 
 .project{
-    
     height: fit-content;
     width: 600px;
 }
@@ -48,44 +50,39 @@ height: 20%;
     font-size: 2em;
     height: 80px;
 }
-.tabsection{
-    background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
+.tabwrapper{
+    width: 100%;
 }
+
 #websitessection{
     display: none;
 }
 .tabs{
     width: 200px;
     text-align: center;
+    font-size: 1.5em;
+    height: fit-content;
 }
 .localprojects{
-    transition: .1s linear;
+    transition: .2s linear;
 }
 .localprojects:hover{
-    background: rgba(161, 148, 148, 0.2);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(7, 151, 232);
     cursor:pointer;
 }
 .localprojectsactive{
-    background: rgba(161, 148, 148, 0.5);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(7, 151, 232);
     cursor:pointer;
 }
 .websites{
-    transition: .1s linear;
+    transition: .2s linear;
 }
 .websites:hover{
-    background: rgba(161, 148, 148, 0.2);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(7, 151, 232);
     cursor:pointer;
 }
 .websitesactive{
-    background: rgba(161, 148, 148, 0.5);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(7, 151, 232);
     cursor:pointer;
 }
 
@@ -93,14 +90,24 @@ backdrop-filter: blur(10px);
     font-size: 1.2em;
     /* text-shadow: 0 2px 5px; */
 }
+.viewongithub{
+    width: 30px;
+    height: 30px;
+    fill: antiquewhite;
+    transition: .2s;
+}
 
 .linkbutton{
     border: 1px solid antiquewhite;
-    transition: .2s
+    transition: .2s;
+    height: 100%;
 }
 .linkbutton:hover{
     background-color: antiquewhite;
     color: var(--greyblue);
+}
+.linkbutton:hover .viewongithub{
+    fill: var(--greyblue)
 }
 
 
@@ -118,6 +125,11 @@ backdrop-filter: blur(10px);
     }
     
     .linkbutton{
-        font-size: .4em;    
+        font-size: .5em;    
+    }
+
+    .viewongithub{
+        width: 15px;
+        height: 15px;
     }
 }
