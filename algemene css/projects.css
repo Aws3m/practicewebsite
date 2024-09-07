@@ -122,7 +122,11 @@ height: 20%;
         font-size: 1.2em;
         height: fit-content;
     }
-    
+    .projecttitle{
+    font-size: 1em;
+text-wrap:nowrap;
+    /* text-shadow: 0 2px 5px; */
+}
     .linkbutton{
         font-size: .5em;    
     }
