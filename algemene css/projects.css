@@ -48,33 +48,32 @@ height: 20%;
     font-size: 2em;
     height: 80px;
 }
+.tabsection{
+    background: linear-gradient(90deg, rgb(7, 151, 232), rgb(64,64,102));
+}
 #websitessection{
     display: none;
 }
+.tabs{
+    width: 200px;
+    text-align: center;
+}
 .localprojects{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     transition: .1s linear;
 }
 .localprojects:hover{
     background: rgba(161, 148, 148, 0.2);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     cursor:pointer;
 }
 .localprojectsactive{
     background: rgba(161, 148, 148, 0.5);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     cursor:pointer;
 }
 .websites{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     transition: .1s linear;
 }
 .websites:hover{
