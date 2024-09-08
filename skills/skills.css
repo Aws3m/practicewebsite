@@ -1,0 +1,94 @@
+.skills{
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    border-radius: 50%;
+    padding: 15px;
+    transition: .2s ease-in-out;
+    width: 100px;
+    height: 100px;
+    position:relative;
+}
+.skill:hover{
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.skillname{
+    position:absolute;
+    bottom: 5px;
+    text-wrap: nowrap;
+    letter-spacing: normal;
+    color: var(--greyblue);
+    font-size: .8em;
+}
+.skillimage{
+    width: 40px;
+    height: 40px;
+}
+#html{
+background: rgba(230, 136, 5, .3);
+}
+#css{
+background: rgba(45, 83, 229, .3);
+}
+#TS{
+background: rgba(49, 120, 198, .3);
+}
+#JS{
+background: rgba(255, 218, 62, .3);
+}
+#vue{
+background: rgba(63, 185, 132, .3);
+}
+#bootstrap{
+background: rgba(99, 13, 202, .3);
+}
+#tailwind{
+background: rgba(56, 189, 248, .3);
+}
+#jquery{
+background: rgba(25, 53, 86, .3);
+}
+#wordpress{
+background: rgba(0,0,0, .3);
+}
+
+@media screen and (max-width: 770px){
+
+    .skills{
+        align-items: center;
+    }
+
+    .skill{
+        height: 70px;
+        width: 70px;
+    }
+
+    .skillname{
+        bottom: 2px;
+        font-size: .6em;
+    }
+    .skillimage{
+        width: 30px;
+        height: 30px;
+    }
+    .skill{
+        pointer-events: none;
+    }
+    
+}
+@media screen and (max-width: 426px){
+
+    .skills{
+        align-items: center;
+        justify-content: center;
+    }
+    .skill{
+        pointer-events: none;
+    }
+    
+}
