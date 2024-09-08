@@ -23,7 +23,8 @@ body{
     width:100%;
     min-height: 100vh;
 }
-
+.projectdiv{
+}
 .title{
     font-size: 3em;
     /* text-shadow: 0 2px 5px; */
@@ -89,7 +90,6 @@ height: fit-content;
 .projecttitle{
     font-size: 1.2em;
     text-wrap:nowrap;
-    position: relative;
 }
 
 .viewongithub{
@@ -132,9 +132,11 @@ height: fit-content;
     /* text-shadow: 0 2px 5px; */
 }
 
-    .linkbutton:hover{
+    .linkbutton{
         font-size: .7em;    
-        background-color: initial;
+    }
+    .linkbutton:hover{
+        background: initial;
         color: initial;
     }
 
