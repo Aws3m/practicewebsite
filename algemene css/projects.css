@@ -40,7 +40,7 @@ background: rgba(44, 35, 78, 0.5);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-height: 20%;
+height: fit-content;
 }
 .projectimage{
     width: 100%;
@@ -88,11 +88,13 @@ height: 20%;
 
 .projecttitle{
     font-size: 1.2em;
-    /* text-shadow: 0 2px 5px; */
+    text-wrap:nowrap;
+    position: relative;
 }
+
 .viewongithub{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     fill: antiquewhite;
     transition: .2s;
 }
@@ -100,7 +102,6 @@ height: 20%;
 .linkbutton{
     border: 1px solid antiquewhite;
     transition: .2s;
-    height: 100%;
 }
 .linkbutton:hover{
     background-color: antiquewhite;
@@ -123,12 +124,18 @@ height: 20%;
         height: fit-content;
     }
     .projecttitle{
-    font-size: .7em;
-text-wrap:nowrap;
+    font-size: 1em;
+    text-wrap:nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     /* text-shadow: 0 2px 5px; */
 }
-    .linkbutton{
-        font-size: .5em;    
+
+    .linkbutton:hover{
+        font-size: .7em;    
+        background-color: initial;
+        color: initial;
     }
 
     .viewongithub{
