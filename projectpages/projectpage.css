@@ -61,7 +61,6 @@ width: 100%;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); */
-        border-radius: 20px;
         padding: 10px;
         display: flex;
         flex-direction: column;
