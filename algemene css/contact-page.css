@@ -19,6 +19,22 @@ body{
     background-size: cover;
     
 }
+.contactwrapper{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 50px;
+}
 .appointmentbutton{
     border: 2px solid var(--greyblue);
     transition: .3s;
@@ -28,16 +44,10 @@ body{
     color: antiquewhite;
 }
 .contactform{
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     padding: 15px;
     gap: 10px
 }
@@ -136,13 +146,16 @@ body{
     .contactpage{
         flex-grow: 0;
     }
+    .contactwrapper{
+        width: 100%;
+    }
     .appointmentbutton:hover{
         background-color: initial;
         color: var(--greyblue);
     }
     .contactform{
         flex-direction: column-reverse;
-        width: 95%;
+        width: 100%;
     }
     .infowrapper{
         border: none;
