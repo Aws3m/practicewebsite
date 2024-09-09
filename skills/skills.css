@@ -56,6 +56,9 @@ background: rgba(25, 53, 86, .3);
 #wordpress{
 background: rgba(0,0,0, .3);
 }
+#php{
+background: rgba(115,119,173, .3);
+}
 
 @media screen and (max-width: 770px){
 

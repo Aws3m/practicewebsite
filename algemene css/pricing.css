@@ -4,10 +4,7 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:seashell;
 }
 .projectpageheader{
     background-image: url('../pictures/projectsheader2-min.jpg');
@@ -48,7 +45,7 @@ table{
     height: fit-content;
     
     text-align: center;
-    background-color: var(--beige);
+    background-color: rgb(247, 247, 247);
 }
 th{
     padding: 10px;
@@ -58,9 +55,36 @@ td{
 }
 .title{
     font-size: 2em;
+    text-shadow: 0 2px 5px;
 }
+.values-image{
+    width: 50%;
+    height: auto;
+   }
+   
+   .values-layout, .mobilefirst-layout{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .values-explanation{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 20px;
+       width: 100%;
+   }
+   .values-title{
+       font-size: 2em;
+   }
+   
+   .values-paragraph{
+       font-size: 1.5em;
+       color: var(--grey);
+   }
 .subtitle{
-    font-size: .8em;
+    font-size: .6em;
 }
 .dashedborder{
     border-bottom: 1px dashed;
@@ -81,9 +105,23 @@ td{
         height: fit-content;
         padding: 10px;
         text-align: center;
-        background-color: azure;
     }
     .stepstowork{
         width: 100%;
+    }
+    .values-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mobilefirst-layout{
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+    .values-title{
+        font-size: 1.5em;
+    }
+    .values-paragraph{
+        font-size: 1.2em;
     }
 }
