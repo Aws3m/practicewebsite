@@ -1,6 +1,7 @@
 .skills{
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 .skill{
     backdrop-filter: blur(var(--blur));
@@ -59,11 +60,36 @@ background: rgba(0,0,0, .3);
 #php{
 background: rgba(115,119,173, .3);
 }
+#nodejs{
+background: rgba(115, 170, 99, .3);
+}
+#react{
+background: rgba(102, 219, 251, .3);
+}
+#angular{
+background: rgba(197, 8, 54, .3);
+}
+#sass{
+background: rgba(199, 100, 148, .3);
+}
+#sql{
+background: rgba(5, 106, 247, .3);
+}
+#python{
+background: linear-gradient(120deg, rgba(54, 112, 160, .3), rgba(255, 206, 61, .3));
+}
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 1024px){
 
     .skills{
-        align-items: center;
+        width: 70%
+    }
+    
+}
+@media screen and (max-width: 775px){
+
+    .skills{
+        width: 80%;
     }
 
     .skill{
@@ -87,8 +113,7 @@ background: rgba(115,119,173, .3);
 @media screen and (max-width: 426px){
 
     .skills{
-        align-items: center;
-        justify-content: center;
+        width: 100%;
     }
     .skill{
         pointer-events: none;
