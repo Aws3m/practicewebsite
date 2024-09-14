@@ -39,7 +39,7 @@ body{
 #picture{
     width: 400px;
     height: auto;
-    border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
+    border-radius:  23% 10% 22% 0% / 23% 0% 22% 10% ;
 }
 .infosection{
     width: 100%;
@@ -71,7 +71,7 @@ body{
     width: 100%;
 }
 .timelineitem:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .timeline-explanation{
@@ -84,6 +84,10 @@ body{
 }
 .round-ball{
     background: var(--greyblue);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1em;
 }
 
 .timeline {
@@ -95,15 +99,12 @@ body{
     width: 70%
     }
 
-    .linecontainer{
-        
-    }
     .line{
         border-left: 5px solid var(--greyblue);
     }
     .text{
-        display: flex;
-        align-items: center;
+        justify-self: end;
+        width: 100%;
     }
 @media screen and (max-width: 770px){
 
@@ -116,7 +117,6 @@ body{
     #picture{
         width: 300px;
         height: auto;
-        border-radius: 26% 0% 24% 0% / 29% 31% 21% 10% ;
     }
     .asl{
         font-size: 1.5em;
@@ -157,7 +157,16 @@ body{
         
         width: 100%
         }
-
+    .round-ball{
+        background: var(--greyblue);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .text{
+        width: 90%;
+        justify-self: end;
+    }
 }
 @media screen and (max-width: 426px){
 
@@ -194,6 +203,9 @@ body{
     }
     .timelineitem{
         pointer-events: none;
+    }
+    .round-ball{
+        font-size: .5em;
     }
 }
 @media screen and (max-width: 320px){
