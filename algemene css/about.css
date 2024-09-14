@@ -68,6 +68,7 @@ body{
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
     transition: .2s ease;
+    width: 100%;
 }
 .timelineitem:hover{
     transform: scale(1.1);
@@ -84,6 +85,26 @@ body{
 .round-ball{
     background: var(--greyblue);
 }
+
+.timeline {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(5, minmax(0fr, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 70%
+    }
+
+    .linecontainer{
+        
+    }
+    .line{
+        border-left: 5px solid var(--greyblue);
+    }
+    .text{
+        display: flex;
+        align-items: center;
+    }
 @media screen and (max-width: 770px){
 
     #footnav{
@@ -132,6 +153,11 @@ body{
     .values-paragraph{
         font-size: 1.2em;
     }
+    .timeline {
+        
+        width: 100%
+        }
+
 }
 @media screen and (max-width: 426px){
 
@@ -169,4 +195,15 @@ body{
     .timelineitem{
         pointer-events: none;
     }
+}
+@media screen and (max-width: 320px){
+
+    
+    .image{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-right: none;
+    }
+    
 }
