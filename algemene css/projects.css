@@ -63,6 +63,15 @@ height: fit-content;
     font-size: 1.5em;
     height: fit-content;
 }
+
+.contactbutton{
+    border: 2px solid var(--greyblue);
+    font-size: 1em;
+}
+.contactbutton:hover{
+    color: antiquewhite;
+    background-color: var(--greyblue);
+}
 .localprojects{
     transition: .2s linear;
 }
