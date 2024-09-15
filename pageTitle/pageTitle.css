@@ -20,10 +20,32 @@
     font-size: 3em;
     height: fit-content;
 }
+.top-menu{
+    gap: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.menutext{
+    padding: 10px;
+    font-size: 1.5em;
+    transition: .2s;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+.menutext:hover{
+    cursor: pointer;
+    border-left-color: var(--greyblue);
+    border-right-color: var(--greyblue);
+}
 
 @media screen and (max-width: 1024px){
     .headertext{
         font-size: 2em;
+    }
+    .menutext{
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 770px){
@@ -31,6 +53,9 @@
         height: 200px;
     }
     .headertext{
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+    .top-menu{
+        display: none;
     }
 }
