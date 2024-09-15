@@ -110,29 +110,6 @@ body{
 	width: fit-content;
 }
 
-@media only screen and (min-width: 1441px){
-	.about-section{
-		transform: rotate(20deg);
-		height: 55rem;
-		width: 500px;
-	}
-	.whatsapp{
-		width: 70%;	
-	}
-	.date{
-		padding-left: 70px;
-	}
-	.symbols{
-		padding-right: 70px;
-		gap: 8px;
-	}
-	.symbolssvg{
-		transform: scale(1.5);
-	}
-	#worktogether{
-		width: 70%;
-	} 
-}
 @media only screen and (min-width: 1350px) {
 	.about-section{
 		transform: rotate(20deg);
