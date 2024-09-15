@@ -152,4 +152,8 @@ height: fit-content;
         width: 15px;
         height: 15px;
     }
+    .contactbutton:hover{
+        color: var(--greyblue);
+        background-color: initial;
+    }
 }

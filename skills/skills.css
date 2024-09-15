@@ -73,18 +73,50 @@ background: rgba(197, 8, 54, .3);
 background: rgba(199, 100, 148, .3);
 }
 #sql{
-background: rgba(5, 106, 247, .3);
+background: rgba(1, 98, 139, .3);
+}
+#sqlsvg{
+    transform: scale(.6);
 }
 #python{
 background: linear-gradient(120deg, rgba(54, 112, 160, .3), rgba(255, 206, 61, .3));
 }
+#git{
+background: rgba(243, 79, 41, .3);
+}
 
+#gitsvg{
+    transform: scale(.6);
+}
+#figma{
+    background: linear-gradient(120deg, rgba(242, 78, 30, .3), rgba(255, 114, 98, .3), rgba(162, 89, 255, .3), rgba(26, 188, 254, .3), rgba(10, 207, 131, .3));
+}
+
+#figmasvg{
+    transform: scale(.7);
+}
+
+#postman{
+    background: rgba(243, 112, 54, .3);
+}
+#postmansvg{
+    transform: scale(.7);
+}
+#quasar{
+    background: rgba(0, 180, 255, .3);
+}
+#quasarsvg{
+    transform: scale(.7);
+}
 @media screen and (max-width: 1024px){
 
     .skills{
         width: 70%
     }
-    
+    .skillname{
+        bottom: 2px;
+        
+    }
 }
 @media screen and (max-width: 775px){
 
@@ -98,7 +130,7 @@ background: linear-gradient(120deg, rgba(54, 112, 160, .3), rgba(255, 206, 61, .
     }
 
     .skillname{
-        bottom: 2px;
+        bottom: 4px;
         font-size: .6em;
     }
     .skillimage{
