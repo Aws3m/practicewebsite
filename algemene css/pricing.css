@@ -59,9 +59,10 @@ td{
 }
 .values-image{
     width: 50%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: scale(.7);
    }
-   
    .values-layout, .mobilefirst-layout{
        display: flex;
        justify-content: center;
@@ -73,7 +74,7 @@ td{
        justify-content: center;
        align-items: center;
        gap: 20px;
-       width: 100%;
+       width: 50%;
    }
    .values-title{
        font-size: 2em;
@@ -82,6 +83,7 @@ td{
    .values-paragraph{
        font-size: 1.5em;
        color: var(--grey);
+       line-height: 40px;
    }
 .subtitle{
     font-size: .6em;
@@ -97,8 +99,6 @@ td{
     border-bottom: 2px solid var(--greyblue);
 }
 
-@media screen and (max-width: 1024px){
-}
 @media screen and (max-width: 770px){
     table{
         width: 100%;
@@ -112,16 +112,25 @@ td{
     .values-layout{
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     .mobilefirst-layout{
         flex-direction: column-reverse; 
         align-items: center;
+        width: 100%;
+    }
+    .values-layout, .mobilefirst-layout{
+        border: 1px solid rgba(88, 88, 8, .3);
+        border-radius: 5px;
     }
     .values-title{
         font-size: 1.5em;
     }
     .values-paragraph{
         font-size: 1.2em;
+    }
+    .values-explanation{
+        width: 100%;
     }
 }
