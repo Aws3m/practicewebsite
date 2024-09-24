@@ -35,14 +35,7 @@ body{
     padding: 15px;
     gap: 50px;
 }
-.appointmentbutton{
-    border: 2px solid var(--greyblue);
-    transition: .3s;
-}
-.appointmentbutton:hover{
-    background-color: var(--greyblue);
-    color: antiquewhite;
-}
+
 .contactform{
     
     display: flex;
@@ -149,10 +142,7 @@ body{
     .contactwrapper{
         width: 100%;
     }
-    .appointmentbutton:hover{
-        background-color: initial;
-        color: var(--greyblue);
-    }
+    
     .contactform{
         flex-direction: column-reverse;
         width: 100%;

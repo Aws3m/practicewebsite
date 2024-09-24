@@ -133,4 +133,8 @@ td{
     .values-explanation{
         width: 100%;
     }
+
+    .headtitle{
+        text-align: center;
+    }
 }

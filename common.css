@@ -81,8 +81,20 @@ div:where(.swal2-container) .swal2-html-container {
 .title{
     font-size: 2em;
 }
+.appointmentbutton{
+    border: 2px solid var(--greyblue);
+    transition: .3s;
+}
+.appointmentbutton:hover{
+    background-color: var(--greyblue);
+    color: antiquewhite;
+}
   @media screen and (max-width: 770px){
     .slidetoggle{
 		display: none;
 	}
+	.appointmentbutton:hover{
+        background-color: initial;
+        color: var(--greyblue);
+    }
 }
